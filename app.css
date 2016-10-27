@@ -1,0 +1,99 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+body, html {
+    height: 100%;
+}
+
+.parallax {
+
+    /* Full height */
+    height: 650px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center 100px;
+    background-repeat: no-repeat;
+}
+
+.parallax-hh {
+  background-image: url("img/hh.jpg");
+}
+
+.parallax-bex {
+  background-image: url("img/bex.jpg");
+}
+
+.parallax-amnh {
+  background-image: url("img/amnh.jpg");
+}
+
+.parallax-lfh {
+  background-image: url("img/lfh.jpg");
+}
+
+.parallax-ucs {
+  background-image: url("img/ucs.jpg");
+}
+
+.parallax-fcgp {
+  background-image: url("img/fcgp.jpg");
+}
+
+.parallax-cbpf {
+  background-image: url("img/cbpf.jpg");
+}
+
+img.logo {
+  width:90%;
+  margin-left: 5%;
+}
+
+.skills-container {
+  padding-top: 60px;
+  background-color: #eee;
+}
+
+.intro div{
+  overflow:hidden;
+}
+
+.projects .row {
+  padding-top: 60px;
+  padding-bottom:20px;
+  border-bottom: 2px solid #eee;
+}
+
+.spacer {
+  height: 100px;
+}
+.intro {
+  padding-top:10px;
+}
+
+.skill ul{
+  padding-left: 17px;
+}

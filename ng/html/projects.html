@@ -1,0 +1,19 @@
+<div class="container-fluid projects">
+  <a name="projects"></a>
+  <h1 class="text-center">Projects</h1>
+  <div class="container-fluid" ng-repeat="project in projects">
+    <a name="{{ project.id }}"></a>
+    <div class="row">
+      <div class="col-md-8">
+        <h3>{{ project.title }}</h3>
+        <h5>{{ project.location }}</h5>
+        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{ project.timeframe }}</small></p>
+        <ng-bind-html ng-bind-html="project.content"></ng-bind-html>
+      </div>
+      <div class="col-md-4">
+          <img class="logo" src="img/{{ project.id }}_logo.png">
+      </div>
+    </div>
+    <div ng-show="project.screenshots" class="parallax parallax-{{ project.id }}"></div>
+  </div>
+</div>

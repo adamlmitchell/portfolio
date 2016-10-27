@@ -1,0 +1,22 @@
+<a name="intro"></a>
+<div class="container intro">
+<div class="page-header">
+  <h1 class="text-center">Introduction</h1>
+</div>
+<div class="container intro" ng-repeat="content in introContent">
+  <div class="row">
+    <div class="col-md-3">
+      <h2>{{ content.title }}</h2>
+    </div>
+    <div class="col-md-9">
+      <div class="lead">{{ content.content }}</div>
+    </div>
+  </div>
+  <hr>
+  <blockquote>
+    <p>"{{ content.quote }}"</p>
+    <footer>{{ content.person }} <cite title="Source Title">{{ content.role }} @ {{ content.organization }}</cite></footer>
+  </blockquote>
+  <hr>
+</div>
+</div>
