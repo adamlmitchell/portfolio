@@ -77,8 +77,12 @@ img.logo {
   background-color: #eee;
 }
 
-.intro div{
+.intro div, .testimonials div{
   overflow:hidden;
+}
+
+.intro div.lead {
+  padding-top: 15px;
 }
 
 .projects .row {
@@ -87,13 +91,21 @@ img.logo {
   border-bottom: 2px solid #eee;
 }
 
+.testimonials .row {
+  padding-top: 60px;
+}
+
 .spacer {
   height: 100px;
 }
-.intro {
+.intro, .testimonials {
   padding-top:10px;
 }
 
 .skill ul{
   padding-left: 17px;
+}
+
+.testimonials .lead {
+  padding-top: 25px;
 }
