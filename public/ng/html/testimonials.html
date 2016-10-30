@@ -1,14 +1,12 @@
-<a name="testimonials"></a>
-<div class="container testimonials">
-<div class="page-header">
+<a class="jump" name="testimonials"></a>
+<div class="container grey">
   <h1 class="text-center">Quotes</h1>
-</div>
 <div class="container testimonials" ng-repeat="content in introContent">
   <hr>
   <a name="{{ content.id }}"></a>
   <div class="row">
-    <div class="col-md-9">
-      <div class="lead">{{ content.fullquote }}</div>
+    <div class="col-md-9 lead">
+      {{ content.fullquote }}
     </div>
     <div class="col-md-3">
       <h2>{{ content.person }}</h2>

@@ -76,33 +76,28 @@ img.logo {
   margin-left: 5%;
 }
 
-.skills-container {
-  padding-top: 60px;
+.jump {
+  padding-bottom: 40px;
+  display: inline-block;
+}
+
+.grey {
   background-color: #eee;
 }
 
-.testimonials {
-  background-color: #eee;
-}
-
-.testimonials hr {
+.grey hr {
   border-top: 1px solid #222;
-}
-
-.career h1 {
-  padding-top:45px;
 }
 
 .intro div, .testimonials div{
   overflow:hidden;
 }
 
-.intro div.lead {
+div.lead, .job-content {
   padding-top: 15px;
 }
 
 .projects .row {
-  padding-top: 60px;
   padding-bottom:20px;
   border-bottom: 2px solid #eee;
 }
@@ -111,27 +106,8 @@ img.logo {
   font-size: 20px;
 }
 
-.testimonials .row, .career .row {
-  padding-top: 60px;
-}
-
-.spacer {
-  height: 100px;
-}
-.intro, .testimonials, .career {
-  padding-top:10px;
-}
-
 .skill ul{
   padding-left: 17px;
-}
-
-.testimonials .lead {
-  padding-top: 25px;
-}
-
-.job-content {
-  padding-top: 20px;
 }
 
 .jumbotron {
