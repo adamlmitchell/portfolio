@@ -2,10 +2,10 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
 .controller('MainController', ['$scope', function($scope) {
   $scope.sName = 'Adam Mitchell';
   $scope.sTitle = 'Technical Director, Senior Developer & Web Technology Consultant';
-  $scope.skillsIntro = "<p>I am a fast learner and very adaptible, I have never met a challenge I couldn't face. In college, I started my formal coding with Java and moved to C#. When I entered the workforce, I had to pick up ActionScript (Flash) and Python, later making a transition to PHP. Seeing those various schools of thought gave me a perspective on the commonality of the logic and solutions across languages and the effects the nuance of the specific syntax can have.</p><p>That perspective has allowed me, throughout my career, to work on small, nimble teams that require quick thinking, gear shifting, and learning new things every day.</p><p>The skills below reflect my most recent experience and are just a small set of the things I have worked with.</p>";
+  $scope.skillsIntro = "<p>I am a fast learner and very adaptible, I have never met a challenge I couldn't face. In college, I started my formal coding with Java and moved to C#. When I entered the workforce, I had to pick up ActionScript (Flash) and Python, later making a transition to PHP. Seeing those various schools of thought gave me a perspective on the commonality of the logic and solutions across languages and the effects the nuance of the specific syntax can have.</p><p>That perspective has allowed me, throughout my career, to work on nimble teams that require quick thinking, gear shifting, and learning new things every day.</p><p>The skills below reflect my most recent experience and are just a small set of the things I have worked with.</p>";
 
   $scope.contactInfo = {
-    content: "I am currently on the market, seeking out the next position where I can be a positive force for a talented and dedicated team of people working on exciting things. If I may be a fit for your team, I would love to hear from you.",
+    content: "I am currently on the market, seeking out my next position where I aspire to be a positive force for a talented and dedicated team of people working on exciting projects. If I may be a fit for your team, I would love to hear from you.",
     links: [
       {
         title: "email",
@@ -505,7 +505,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       title: 'Technical Manager',
       location: 'Siteworx, Inc.',
       timeframe: 'June 2006 - March 2009',
-      content: '<p>As Siteworx had grown to now have a technical team of 30 developers, they underwent a restructuring that saw me promoted to one of 4 Technical Manager positions in charge of handling personnel, staffing, project, and development management for a team of 7 developers.</p><ul>'+
+      content: '<p>As Siteworx had grown to then have a technical team of 30 developers, they underwent a restructuring that saw me promoted to one of 4 Technical Manager positions in charge of handling personnel, staffing, project, and development management for a team of 7 developers.</p><ul>'+
         '<li>Directly managed and coordinated team of 7 developers to successfully complete multiple simultaneous projects.</li>'+
         '<li>Worked closely with team leads from various disciplines to manage projects through full life cycle.</li>'+
         '<li>Managed customer relationships effectively and worked closely with account lead to grow accounts and pursue up sell opportunities. Clients included associations and nonprofit organizations.</li>'+
