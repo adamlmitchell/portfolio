@@ -81,6 +81,18 @@ img.logo {
   background-color: #eee;
 }
 
+.testimonials {
+  background-color: #eee;
+}
+
+.testimonials hr {
+  border-top: 1px solid #222;
+}
+
+.career h1 {
+  padding-top:45px;
+}
+
 .intro div, .testimonials div{
   overflow:hidden;
 }
@@ -99,14 +111,14 @@ img.logo {
   font-size: 20px;
 }
 
-.testimonials .row {
+.testimonials .row, .career .row {
   padding-top: 60px;
 }
 
 .spacer {
   height: 100px;
 }
-.intro, .testimonials {
+.intro, .testimonials, .career {
   padding-top:10px;
 }
 
@@ -116,6 +128,10 @@ img.logo {
 
 .testimonials .lead {
   padding-top: 25px;
+}
+
+.job-content {
+  padding-top: 20px;
 }
 
 .jumbotron {

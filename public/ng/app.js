@@ -4,6 +4,24 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
   $scope.sTitle = 'Technical Director, Senior Developer & Web Technology Consultant';
   $scope.skillsIntro = "<p>I am a fast learner and very adaptible, I have never met a challenge I couldn't face. In college, I started my formal coding with Java and moved to C#. When I entered the workforce, I had to pick up ActionScript (Flash) and Python, later making a transition to PHP. Seeing those various schools of thought gave me a perspective on the commonality of the logic and solutions across languages and the effects the nuance of the specific syntax can have.</p><p>That perspective has allowed me, throughout my career, to work on small, nimble teams that require quick thinking, gear shifting, and learning new things every day.</p><p>The skills below reflect my most recent experience and are just a small set of the things I have worked with.</p>";
 
+  $scope.contactInfo = {
+    content: "I am currently on the market, seeking out the next position where I can be a positive force for a talented and dedicated team of people working on exciting things. If I may be a fit for your team, I would love to hear from you.",
+    links: [
+      {
+        title: "email",
+        linkText: "adamleemitchell@gmail.com",
+        link: "mailto:adamleemitchell@gmail.com",
+        targetBlank: false
+      },
+      {
+        title: "LinkedIn",
+        linkText: "adamleemitchell",
+        link: "http://linkedin.com/in/adamleemitchell",
+        targetBlank: true
+      }
+    ]
+  };
+
   $scope.skills = [
     {
       title: "Concepts",
@@ -393,7 +411,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       location: 'Siteworx, Inc.',
       timeframe: 'March 2004',
       description: 'Merit-based promotion from internship, hired on as full-time developer.',
-      id: ''
+      id: 'swx-d'
     },
     {
       type: 'project',
@@ -436,79 +454,108 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
 
   $scope.jobs = [
     {
-      title: 'Promoted to Director of Technology',
-      detail: "",
+      id: 'bf-techdir',
+      title: 'Director of Technology',
       location: 'Beaconfire RED',
-      timeframe: 'July 2015',
-      description: 'Assumed Technical Director position alongside continued Technical Lead position.',
-      id: 'bf-techdir'
-    },
-
-    {
-      title: 'Promoted to Technical Lead with Personnel Manager duties',
-      detail: "",
-      location: 'Beaconfire RED',
-      timeframe: 'June 2014',
-      description: 'Took on additional responsibilities as Personnel Manager for the development department.',
-      id: ''
-    },
-    {
-      title: 'Started at Beaconfire RED as Senior Developer',
-      detail: "",
-      location: 'Beaconfire RED',
-      timeframe: 'March 2009',
-      description: 'Hired on as Developer quickly moved to Senior Developer/Technical Lead',
-      id: 'bf-dev'
+      timeframe: 'July 2015 - September 2016',
+      content: '<p>Assumed Technical Director position alongside continued Technical Lead position.</p><ul>'+
+      '<li>Internally promoted from Tech Lead role</li>'+
+      '<li>Managed hierarchical tech team of 12 developers</li>'+
+      '<li>Developed internal team goals and milestones for department improvement</li>'+
+      '<li>Responsible for consulting, problem solving, and mentoring resources on all aspects of CMS builds and integrations, including: CMS architecture, 3rd party systems integration, search engine configuration (SOLR), caching, SEO, semantic content</li>'+
+      '<li>Architected and developed integrated CMS solutions in Drupal and WordPress</li>'+
+      '<li>Consulted with clients and team members from various departments on project goals, approach, requirements, timeline, budgets, software selection, vendor selection, content migration, and hosting</li>'+
+      '<li>Consulted internally on tools, processes, and efficiency of operations</li>'+
+      '<li>Performed Technical Lead duties alongside Tech Director duties</li>'+
+      '<li>Worked remotely from St. Louis metro area</li>'+
+      '</ul>'
     },
     {
-      title: 'Started at Atlantic Media as Project Manager',
-      detail: "",
+      id: 'bf-dev',
+      title: 'Technical Lead',
+      location: 'Beaconfire RED',
+      timeframe: 'March 2009 - September 2016',
+      content: '<p>In early 2009, I hired on with Beaconfire RED as a Senior Developer initially but was quickly transitioned to a Technical Lead.</p><ul>'+
+        '<li>Delivered tailored, effective solutions through evaluating, architecting, and implementing various web-based technologies including both 3rd party and open source platforms and tools</li>'+
+        '<li>Responsible for architecting solutions and breaking them down into components and individual tasks to delegate to team</li>'+
+        '<li>Accountable for consulting and leading development of solution, approach, estimates, budgets, timeline, project plan, and day to day management of tasks for projects led</li>'+
+        '<li>Primary technologies were eZ Publish, Drupal, custom PHP applications, HTML, CSS, and 3rd party API integration</li>'+
+        '<li>Championed and led internal efforts to adopt industy best-practices, including consistent use of source control and ticketing systems</li>'+
+        '<li>Led full team through migration from projcets with no source control to Subversion and later to Git</li>'+
+        '<li>Administered Atlassian products including JIRA and Confluence. Responsibilities included full design and implementation of end-to-end workflow in JIRA, construction of templates and spaces in Confluence, and full integration of the two products</li>'+
+        '<li>Responsible for developing and implementing solutions for large-scale data migrations including database extraction, API, and screen-scraping techniques</li>'+
+        '<li>Conducted several full-scale CMS product comparisons for clients, including determining client concerns & primary needs, coordinating product demos, and consulting on final evaluation & decisions</li>'+
+        '<li>Developed and maintained high-quality client relationships built on open and honest communication</li>'+
+        '<li>Was a member of People Committee - an employee-led group of employees in charge of running the annual staff survey and interpreting / reporting findings to the Senior Leadership team and owners of the company</li>'+
+        '<li>Transitioned to full time remote position from the St Louis metro area in July 2012</li>'+
+        '</ul>'
+    },
+    {
+      id: 'am',
+      title: 'Project Manager with Technical Focus',
       location: 'Atlantic Media',
-      timeframe: 'June 2008',
-      description: 'Hired on as Project Manager with Technical focus.',
-      id: 'am'
+      timeframe: 'June 2008 - March 2009',
+      content: '<p>After leaving Siteworx, I went to Atlantic Media Company, producers of The National Journal, Congress Daily, and The Atlantic Monthly. While my title was Project Manager, the primary focus of my role was to function as the technical liason between the IT/development team and the various business units within the organization.</p><ul>'+
+        '<li>Coordinated project timelines and development tasks for multiple internal business units.</li>'+
+        '<li>Assisted with the creation and implementation of full SLDC project management process for IT department.</li>'+
+        '</ul>'
     },
     {
-      title: 'Promoted to Technical Manager',
-      detail: "",
+      id: 'swx-tm',
+      title: 'Technical Manager',
       location: 'Siteworx, Inc.',
-      timeframe: 'June 2006',
-      description: 'Promoted to Technical Manager for team of 8 developers.',
-      id: 'swx-tm'
+      timeframe: 'June 2006 - March 2009',
+      content: '<p>As Siteworx had grown to now have a technical team of 30 developers, they underwent a restructuring that saw me promoted to one of 4 Technical Manager positions in charge of handling personnel, staffing, project, and development management for a team of 7 developers.</p><ul>'+
+        '<li>Directly managed and coordinated team of 7 developers to successfully complete multiple simultaneous projects.</li>'+
+        '<li>Worked closely with team leads from various disciplines to manage projects through full life cycle.</li>'+
+        '<li>Managed customer relationships effectively and worked closely with account lead to grow accounts and pursue up sell opportunities. Clients included associations and nonprofit organizations.</li>'+
+        '<li>Consulted with clients on user interface design, technology platforms, best practices, and system implementation.</li>'+
+        '<li>Developed, refined, and analyzed requirements to develop Level of Effort (LOE) estimates and project schedules.</li>'+
+        '<li>Effectively managed timelines, risks, budgets, hours tracking, and invoicing for multiple projects.</li>'+
+        '<li>Collaborated with senior developers and system engineers to define project architecture and hardware requirements.</li>'+
+        '<li>Used expertise in both technical and soft skills to mentor junior and senior developers.</li>'+
+        '</ul>'
     },
     {
-      title: 'Promoted to Senior Developer',
-      detail: "",
+      id: 'swx-sd',
+      title: 'Senior Developer',
       location: 'Siteworx, Inc.',
-      timeframe: 'June 2005',
-      description: 'Promoted from developer to senior developer.',
-      id: 'swx-sd'
+      timeframe: 'June 2005 - June 2006',
+      content: '<p>Frequently representing Siteworx as a Technology Consultant and consistently responsible for leading developement efforts and coordinating teams of 2-3 developers, I was promoted to Senior Developer.</p><ul>'+
+        '<li>Directly managed team of 3 developers to successfully complete multiple simultaneous projects.</li>'+
+        '<li>Worked with management team to coordinate matrixed development team across projects.</li>'+
+        '<li>Analyzed requirements to define scope, generate LOE estimates, and outline schedules.</li>'+
+        '<li>Acted as technical lead and project manager on multiple simultaneous projects.</li>'+
+        '<li>Collaborated with project managers and client contacts to constrain scope, mitigate risk, and meet deadlines.</li>'+
+        '<li>Mentored junior developers to improve both technical and softer skills.</li>'+
+        '</ul>'
     },
     {
-      title: 'Hired on as Full-Time Developer',
-      detail: "",
+      id: 'swx-d',
+      title: 'Software Developer',
       location: 'Siteworx, Inc.',
-      timeframe: 'March 2004',
-      description: 'Merit-based promotion from internship, hired on as full-time developer.',
-      id: ''
+      timeframe: 'March 2004 - June 2005',
+      content: '<p>As a software developer at Siteworx, which was quickly growing at the time, I was able to continue to prove my worth and began managing project teams of 2-3 developers as new junior resources joined the development team.</p><ul>'+
+        '<li>Implemented multiple software projects as both a member and lead of teams of 2 -3 developers.</li>'+
+        '<li>Utilized wide range of skills to assist with development, user interface design, and project management.</li>'+
+        '<li>Worked on-site, embedded with client development teams.</li>'+
+        '<li>Collaborated with co-workers and clients to effective deliver highly functional and dynamic projects.</li>'+
+        '<li>Displayed effective time-management and communication skills to juggle multiple responsibilities.</li>'+
+        '</ul>'
     },
     {
-      type: 'position',
-      title: 'Started as Development Intern',
-      detail: "",
+      id: 'swx-intern',
+      title: 'Development Intern',
       location: 'Siteworx, Inc.',
-      timeframe: 'January 2004',
-      description: 'Started with 3 month internship between college semesters.',
-      id: 'swx-intern'
+      timeframe: 'January 2004 - March 2004',
+      content: '<p>Relocated to Reston, VA and started with 3 month internship between college semesters.</p><p>Siteworx was still a small shop at the time and I was one of 8 employees. Initially the position was not meant to have specific goals and was instead intended to merely be an introduction to working in the industry and a test to see if Siteworx could fill time for someone in a junior capacity.</p><p>Based on my performance on early tasks, the complexity and amount of tasks I was given escalated quickly and 2 months in to the internship, I was offered a full time position as a software developer. Given that I had quickly become an integral part of their small team, I chose to continue with the position in lieu of returning to college the next semester.</p>'
     },
     {
-      type: 'position',
-      title: "Started as Office Assistant",
-      detail: "",
+      id: 'siue',
+      title: "Office Assistant",
       location: 'Southern Illinois University Edwardsville Textbook Service',
-      timeframe: 'March 2002',
-      description: 'Worked as office assistant while attending college.',
-      id: 'swx-intern'
+      timeframe: 'March 2002 - December 2003',
+      content: '<p>Worked as office assistant while attending college.</p><p>As part of my work in this position I provided some feedback about their custom internal rental system application, which had been written over many years by a single resource as screen-based database code in Paradox 4.5. That feedback led to eventually debugging, maintaining, and re-architecting many pieces of the application myself, becoming the first student worker to assist with the program.</p>'
     }
 
   ];
@@ -670,6 +717,22 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
   ];
 
 }])
+.directive('career', function(){
+  return {
+    restrict: 'E',
+    replace: false,
+    templateUrl:
+    'ng/html/career.html'
+  };
+})
+.directive('contact', function(){
+  return {
+    restrict: 'E',
+    replace: false,
+    templateUrl:
+    'ng/html/contact.html'
+  };
+})
 .directive('intro', function(){
   return {
     restrict: 'E',
