@@ -1,5 +1,9 @@
 /* app css stylesheet */
 
+.nav, .navbar-header, h1, h2, h3 {
+  font-family: Courier;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -91,6 +95,10 @@ img.logo {
   border-bottom: 2px solid #eee;
 }
 
+.projects h3 {
+  font-size: 20px;
+}
+
 .testimonials .row {
   padding-top: 60px;
 }
@@ -108,4 +116,41 @@ img.logo {
 
 .testimonials .lead {
   padding-top: 25px;
+}
+
+.jumbotron {
+  padding-bottom: 0;
+  padding-top: 0;
+  background-color: #a5a3a4;
+  background-image: url(assets/headshot/amitchell.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.jumbotron-logo {
+  padding-top: 8%;
+  padding-bottom: 2%;
+}
+
+.jumbotron-text {
+  font-family: Courier;
+  font-size: 1.3em !important;
+  max-width: 35%;
+  text-align: right;
+  clear:right;
+}
+
+@media (max-width: 1000px) {
+  .jumbotron {
+    background-image: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .jumbotron-logo {
+    width: 50%;
+  }
+  .jumbotron-text {
+    max-width: 80%;
+  }
 }
