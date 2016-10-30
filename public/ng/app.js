@@ -2,10 +2,10 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
 .controller('MainController', ['$scope', function($scope) {
   $scope.sName = 'Adam Mitchell';
   $scope.sTitle = 'Technical Director, Senior Developer & Web Technology Consultant';
-  $scope.skillsIntro = "<p>I am a fast learner and very adaptible, I have never met a challenge I couldn't face. In college, I started my formal coding with Java and moved to C#. When I entered the workforce, I had to pick up ActionScript (Flash) and Python, later making a transition to PHP. Seeing those various schools of thought gave me a perspective on the commonality of the logic and solutions across languages and the effects the nuance of the specific syntax can have.</p><p>That perspective has allowed me, throughout my career, to work on nimble teams that require quick thinking, gear shifting, and learning new things every day.</p><p>The skills below reflect my most recent experience and are just a small set of the things I have worked with.</p>";
+  $scope.skillsIntro = "<p>Being a fast learner and quick to adapt, I am always picking up new technologies and skills.</p><p>On the technology side, I started in college with Java then C#. At my first internship, I quickly found myself doing image production in Photoshop, writing complex Flash applications in ActionScript (Flash), and building CMSes with Python, HTML, and CSS. Later, I made the transition to PHP, working with custom applications and several CMS products.</p><p>Both of my long-term positions were for agencies focused on finding the right solution for clients, not just the easy solution. I have gained expert-level knowledge to support a technology for years at times and dug in to legacy platforms for a day's worth of work at others.</p><p>That adaptibility and the perspective it has given me allowed me to be a key part of nimble teams that require quick thinking, gear shifting, and learning new things every day.</p><p>Outside of development has been no different. My first long time position, I grew from a development intern to a Technical Manager. In that position, I was asked to play several roles from developer to project manager to technical consultant to UXIA designer. From there, I continued that trajectory and grew to Technical Director, responsible for understanding not just the technology but the needs and motivations of clients and other departments as well.</p><p>Leveraging these various technologies and skills throughout my career has provided perspective on the similarities of the logic and solutions for various problems and given me the ability to quickly assess root-cause concerns and identify solutions that get to the true issue. The skills below reflect my most recent experience and are just a small set of the things I have worked with.</p>";
 
   $scope.contactInfo = {
-    content: "I am currently on the market, seeking out my next position where I aspire to be a positive force for a talented and dedicated team of people working on exciting projects. If I may be a fit for your team, I would love to hear from you.",
+    content: "<p>I am currently on the market, seeking out my next position where I aspire to be a positive force for a talented and dedicated team of people working on exciting projects.</p><p>My interests in a new position are as broad as my experience, more than a specific role or set of tasks, I am seeking out a thought-provoking position where the team feels like family and I can feel like I made a difference every day and contributed to the team and company's success, however my skills may be leveraged getting there.</p><p>If I may be a fit for your team, I would love to hear from you.</p>",
     links: [
       {
         title: "email",
@@ -27,13 +27,17 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       title: "Concepts",
       list: [
         "Content Management Systems",
-        "APIs",
+        "Technical Consulting and Speaking Tech to clients at all levels",
         "Integrations",
         "Migrations",
         "Web Technologies",
-        "Software Developement Lifecycle",
-        "Teambuilding - hiring, career path coaching, mentoring",
-        "Sub-contractor management"
+        "API - both integration and design",
+        "SEO",
+        "Faceted Search Optimization",
+        "Full SDLC",
+        "Change management",
+        "Agile workflows"
+
       ]
     },
     {
@@ -42,7 +46,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
         "CMS: Drupal, eZ Publish, WordPress",
         "Languages: PHP, Javascript, jQuery, AngularJS, HTML, Python",
         "Concepts: OOP, DevOps, Continuous Integration, SSO, SEO, Accessibility",
-        "Systems: LAMP stack, AWS, Unix",
+        "Systems: LAMP stack, AWS, Unix, Apache, Apache SOLR Search, MySQL",
         "Product Administration: JIRA, Confluence, HipChat",
         "Software: Sublime, PHPStorm, Eclipse, Photoshop, Illustrator, InDesign, Visio"
       ]
@@ -53,10 +57,12 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
         "Director experience overseeing technical department",
         "12+ years experience in agency environment",
         "Attuned to fast pace and multi-tasking",
-        "Self-starter",
+        "Management style that focuses on collaboration and team-building",
         "Experience staffing in matrixed environment",
         "Experience estimating and planning $250k+ projects",
-        "Experience managing and mentoring junior resources"
+        "Experience managing and mentoring junior resources",
+        "Sub-contractor management",
+
       ]
     }
   ];
@@ -521,7 +527,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       title: 'Senior Developer',
       location: 'Siteworx, Inc.',
       timeframe: 'June 2005 - June 2006',
-      content: '<p>Frequently representing Siteworx as a Technology Consultant and consistently responsible for leading developement efforts and coordinating teams of 2-3 developers, I was promoted to Senior Developer.</p><ul>'+
+      content: '<p>Frequently representing Siteworx as a Technology Consultant, leading development efforts, and coordinating teams of 2-3 developers, I was promoted to Senior Developer.</p><ul>'+
         '<li>Directly managed team of 3 developers to successfully complete multiple simultaneous projects.</li>'+
         '<li>Worked with management team to coordinate matrixed development team across projects.</li>'+
         '<li>Analyzed requirements to define scope, generate LOE estimates, and outline schedules.</li>'+
@@ -548,7 +554,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       title: 'Development Intern',
       location: 'Siteworx, Inc.',
       timeframe: 'January 2004 - March 2004',
-      content: '<p>Relocated to Reston, VA and started with 3 month internship between college semesters.</p><p>Siteworx was still a small shop at the time and I was one of 8 employees. Initially the position was not meant to have specific goals and was instead intended to merely be an introduction to working in the industry and a test to see if Siteworx could fill time for someone in a junior capacity.</p><p>Based on my performance on early tasks, the complexity and amount of tasks I was given escalated quickly and 2 months in to the internship, I was offered a full time position as a software developer. Given that I had quickly become an integral part of their small team, I chose to continue with the position in lieu of returning to college the next semester.</p>'
+      content: '<p>Temporarily relocated to Reston, Virginia and started with 3 month internship between college semesters.</p><p>Siteworx was still a small shop at the time and I was one of 8 employees. Initially the position was not meant to have specific goals and was instead intended to merely be an introduction to working in the industry and a test to see if Siteworx could fill time for someone in a junior capacity.</p><p>Based on my performance on early tasks, the complexity and amount of tasks I was given escalated quickly and 2 months in to the internship, I was offered a full time position as a software developer. Given that I had quickly become an integral part of their small team, I chose to permanently relocate to Reston to continue with the position.</p>'
     },
     {
       id: 'siue',
@@ -563,7 +569,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
   $scope.introContent = [
    {
       title: "Developer",
-      content: "I have always been drawn to computers. From my early days tinkering with programs on my TI-83 calculator and teaching myself the basics of HTML on my first desktop computer to recently digging in to AngularJS and Bootstrap, I have always had a desire to learn more about how things work behind the scenes. That curiosity has led me to a career in development that has included a breadth of web technologies and solutions including primary web technologies (HTML, CSS, JavaScript), LAMP stack, various languages (PHP, Java, Python, and more), and a specific focus on CMS platform technologies (Drupal, eZ Publish, WordPress, etc). Throughout my time in the web industry, I have become very familiar with the challenges of web builds, both common and uncommon.",
+      content: "I have always been drawn to computers. From my early days tinkering with programs on my TI-83 calculator and teaching myself the basics of HTML on my first desktop computer to recently digging in to AngularJS and Bootstrap, I have always had a desire to learn more about how things work under the hood. That curiosity has led me to a career in development with a breadth of web technologies and solutions including primary web technologies (HTML, CSS, JavaScript), LAMP stack, various languages (PHP, Java, Python, and more), and a specific focus on CMS platform technologies (Drupal, eZ Publish, WordPress, etc). Throughout my time in the web industry, I have become very familiar with the challenges of web builds, both common and uncommon.",
       quote: "Adam's ability to help me dissect problems, and then come up with steps to solve them, have really helped me become a better developer and manager.",
       fullquote: "Adam was a great source of information when I needed help both technically and managerially. His ability to help me dissect problems and then come up with steps to solve them, have really helped me become a better developer and manager.",
       person: "Chris Guy",
@@ -603,7 +609,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
     },
     {
       title: "Manager",
-      content: "I have a strong belief in teamwork and collaboration. Leveraging junior and senior skillsets appropriately, mentoring team members, and growing organically are key goals when building a successful team. I am a steadfast believer in good ideas over politics and value collaboration & teamwork above all else.",
+      content: "I have a strong belief in teamwork and collaboration. Leveraging individual strengths appropriately, mentoring team members, and growing organically are key goals when managing a successful team. I am a steadfast believer in good ideas over politics and value collaboration & teamwork above all else.",
       quote: "Adam believes in mutual trust and loyalty amongst his team members [...] I couldn't ask for a better team manager.",
       fullquote: "Adam is the ideal Team Manager. He knew the specialties of each of his team members and assigned us to appropriate tasks so that he knew we could have them done by their deadline. He also believed in mutual trust and loyalty amongst his team members, so if we had any issues we knew we could go to him with them, and if he needed something from us we could provide it for him. He never had to hound us about our work, he trusted that we knew we could speak up about any concerns, and if we did, he acted appropriately. I couldn't ask for a better team manager.",
       person: "Jim Schmatz",

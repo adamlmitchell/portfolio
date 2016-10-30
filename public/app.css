@@ -145,4 +145,7 @@ div.lead, .job-content {
   .jumbotron-text {
     max-width: 80%;
   }
+  .parallax {
+    display: none;
+  }
 }
