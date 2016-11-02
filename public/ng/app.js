@@ -567,56 +567,76 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
 
   ];
 
+  $scope.quoteOrder = ["danderson", "mrogers", "nmeier", "jschmatz", "cguy"];
+
+  $scope.quotes = {
+    "danderson" : {
+      id : 'danderson',
+      highlight: "Adam is extremely attuned to the people around him and developed relationships of trust with the entire team. He is one of the best consultants I've ever worked with.",
+      quote: "Adam delivered simply stellar results in an enormous user design redesign project. I could always count on Adam to come up with inventive, out-of-the-box ideas, and then follow through with an excellent implementation. He is also extremely attuned to the people around him and developed relationships of trust with the entire team. He is one of the best consultants I've ever worked with.",
+      person: "Darrill Anderson",
+      role: "Client",
+      organization: "The College Board"
+    },
+    "mrogers" : {
+      id: 'mrogers',
+      highlight: "Adam is full of ideas about how to move the project forward. He is a great problem solver whether it be helping with technical hurdles, improving design and usability, or rearranging schedules so the project doesn't go down hill. I would recommend Adam as a great addition to any software development team.",
+      quote: "Adam and I worked together in supervising a team of developers. His job as technical manager allowed me to do my job as lead software engineer. He is great with communication and keeping the team and our clients informed. He is also full of ideas about how to move the project forward. He is a great problem solver whether it be helping with technical hurdles, improving design and usability, or rearranging schedules so the project doesn't go down hill. I would recommend Adam as a great addition to any software development team.",
+      person: "Marco Rogers",
+      role: "Former Co-Worker & Engineering Manager",
+      organization: "Clover Health"
+    },
+    "nmeier" : {
+      id : 'nmeier',
+      highlight: "Adam is a versatile and talented software engineer and manager. He has a knack for working with clients to build solutions that are well considered and engineered while maintaining budget and focus on deadlines.",
+      quote: "Adam is a versatile and talented software engineer and manager. He has a knack for working with clients to build solutions that are well considered and engineered while maintaining budget and focus on deadlines. As a manager, Adam balances the needs of the organization with the concerns of the development team to ensure high productivity and team cohesion. Adam is the missing component of any team looking to excel.",
+      person: "Neal Meier",
+      role: "Former Co-Worker & Owner",
+      organization: "Elevated Presence"
+    },
+    "jschmatz" : {
+      id : 'jschmatz',
+      highlight: "Adam believes in mutual trust and loyalty amongst his team members [...] I couldn't ask for a better team manager.",
+      quote: "Adam is the ideal Team Manager. He knew the specialties of each of his team members and assigned us to appropriate tasks so that he knew we could have them done by their deadline. He also believed in mutual trust and loyalty amongst his team members, so if we had any issues we knew we could go to him with them, and if he needed something from us we could provide it for him. He never had to hound us about our work, he trusted that we knew we could speak up about any concerns, and if we did, he acted appropriately. I couldn't ask for a better team manager.",
+      person: "Jim Schmatz",
+      role: "Senior Developer & Former Employee",
+      organization: "Siteworx, Inc."
+    },
+    "cguy" : {
+      id: 'cguy',
+      highlight: "Adam's ability to help me dissect problems, and then come up with steps to solve them, have really helped me become a better developer and manager.",
+      quote: "Adam was a great source of information when I needed help both technically and managerially. His ability to help me dissect problems and then come up with steps to solve them, have really helped me become a better developer and manager.",
+      person: "Chris Guy",
+      role: "Senior Developer & Former Employee",
+      organization: "Siteworx, Inc."
+    }
+  };
+
   $scope.introContent = [
    {
       title: "Developer",
       content: "I have always been drawn to computers. From my early days tinkering with programs on my TI-83 calculator and teaching myself the basics of HTML on my first desktop computer to recently digging in to AngularJS and Bootstrap, I have always had a desire to learn more about how things work under the hood. That curiosity has led me to a career in development with a breadth of web technologies and solutions including primary web technologies (HTML, CSS, JavaScript), LAMP stack, various languages (PHP, Java, Python, and more), and a specific focus on CMS platform technologies (Drupal, eZ Publish, WordPress, etc). Throughout my time in the web industry, I have become very familiar with the challenges of web builds, both common and uncommon.",
-      quote: "Adam's ability to help me dissect problems, and then come up with steps to solve them, have really helped me become a better developer and manager.",
-      fullquote: "Adam was a great source of information when I needed help both technically and managerially. His ability to help me dissect problems and then come up with steps to solve them, have really helped me become a better developer and manager.",
-      person: "Chris Guy",
-      role: "Senior Developer & Former Employee",
-      organization: "Siteworx, Inc.",
-      id: 'cguy'
+      quote: "cguy"
     },
     {
       title: "Problem Solver",
       content: "With more than a dozen years of experience in the web tech industry, I have a versatile background which includes experience as a developer, technical team lead, UX architect, project manager, technical consultant, and technical director. I am a quick learner and have spent most of my career being a collaborator and leader that fills in the gaps, playing a necessary but ill-defined role of problem solver and team force multiplier.",
-      quote: "Adam is full of ideas about how to move the project forward. He is a great problem solver whether it be helping with technical hurdles, improving design and usability, or rearranging schedules so the project doesn't go down hill. I would recommend Adam as a great addition to any software development team.",
-      fullquote: "Adam and I worked together in supervising a team of developers. His job as technical manager allowed me to do my job as lead software engineer. He is great with communication and keeping the team and our clients informed. He is also full of ideas about how to move the project forward. He is a great problem solver whether it be helping with technical hurdles, improving design and usability, or rearranging schedules so the project doesn't go down hill. I would recommend Adam as a great addition to any software development team.",
-      person: "Marco Rogers",
-      role: "Former Co-Worker & Engineering Manager",
-      organization: "Clover Health",
-      id: 'mrogers'
+      quoteid: 'mrogers'
     },
     {
       title: "Collaborator",
       content: "Personable, outgoing, intuitive, and creative with an eye for solutions that are both technically sound and personally engaging, I am able to leverage my pragmatic and collaborative nature to manage teams, engage internal & client team members, and deliver high quality results. I have been an integral part of teams responsible for delivering award-winning websites and have helped many organizations identify root-cause problems, design solutions, and achieve success.",
-      quote: "Adam is a versatile and talented software engineer and manager. He has a knack for working with clients to build solutions that are well considered and engineered while maintaining budget and focus on deadlines.",
-      fullquote: "Adam is a versatile and talented software engineer and manager. He has a knack for working with clients to build solutions that are well considered and engineered while maintaining budget and focus on deadlines. As a manager, Adam balances the needs of the organization with the concerns of the development team to ensure high productivity and team cohesion. Adam is the missing component of any team looking to excel.",
-      person: "Neal Meier",
-      role: "Former Co-Worker & Owner",
-      organization: "Elevated Presence",
-      id: 'nmeier'
+      quoteid: 'nmeier'
     },
     {
       title: "Consensus Builder",
       content: "While I have a breadth of experience with all parts of development, what always engages me the most are the collaborative and brainstorming aspects. I love to dig in to a problem, put heads down with others, and work towards a smart solution. I am very pragmatic and tend to emerge as a thought-leader, working to identify the best path forward. In addition to my own contributions, I often reinforce others' opinions and give a voice to the best ideas no matter where or who they come from.",
-      quote: "Adam is extremely attuned to the people around him and developed relationships of trust with the entire team. He is one of the best consultants I've ever worked with.",
-      fullquote: "Adam delivered simply stellar results in an enormous user design redesign project. I could always count on Adam to come up with inventive, out-of-the-box ideas, and then follow through with an excellent implementation. He is also extremely attuned to the people around him and developed relationships of trust with the entire team. He is one of the best consultants I've ever worked with.",
-      person: "Darrill Anderson",
-      role: "Client",
-      organization: "The College Board",
-      id: 'danderson'
+      quoteid: 'danderson'
     },
     {
       title: "Manager",
       content: "I have a strong belief in teamwork and collaboration. Leveraging individual strengths appropriately, mentoring team members, and growing organically are key goals when managing a successful team. I am a steadfast believer in good ideas over politics and value collaboration & teamwork above all else.",
-      quote: "Adam believes in mutual trust and loyalty amongst his team members [...] I couldn't ask for a better team manager.",
-      fullquote: "Adam is the ideal Team Manager. He knew the specialties of each of his team members and assigned us to appropriate tasks so that he knew we could have them done by their deadline. He also believed in mutual trust and loyalty amongst his team members, so if we had any issues we knew we could go to him with them, and if he needed something from us we could provide it for him. He never had to hound us about our work, he trusted that we knew we could speak up about any concerns, and if we did, he acted appropriately. I couldn't ask for a better team manager.",
-      person: "Jim Schmatz",
-      role: "Senior Developer & Former Employee",
-      organization: "Siteworx, Inc.",
-      id: 'jschmatz'
+      quoteid: 'jschmatz'
     }
   ];
 

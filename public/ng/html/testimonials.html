@@ -1,17 +1,17 @@
 <a class="jump" name="testimonials"></a>
 <div class="container grey">
   <h1 class="text-center">Quotes</h1>
-<div class="container testimonials" ng-repeat="content in introContent">
+<div class="container testimonials" ng-repeat="quoteid in quoteOrder" ng-init="quote = quotes[quoteid]">
   <hr>
-  <a class="jump" name="{{ content.id }}"></a>
+  <a class="jump" name="{{ quote.id }}"></a>
   <div class="row">
     <div class="col-md-9 lead">
-      {{ content.fullquote }}
+      {{ quote.quote }}
     </div>
     <div class="col-md-3">
-      <h2>{{ content.person }}</h2>
-      <h3><small>{{ content.role }}</small></h3>
-      <h3><small>{{ content.organization }}</small></h3>
+      <h2>{{ quote.person }}</h2>
+      <h3><small>{{ quote.role }}</small></h3>
+      <h3><small>{{ quote.organization }}</small></h3>
     </div>
   </div>
 </div>

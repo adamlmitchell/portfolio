@@ -1,20 +1,21 @@
 <a class="jump" name="intro"></a>
 <div class="container intro">
   <h1 class="text-center">Introduction</h1>
-<div class="container intro" ng-repeat="content in introContent">
-  <div class="row">
-    <div class="col-md-3">
-      <h2>{{ content.title }}</h2>
+  <div class="container intro" ng-repeat="content in introContent" ng-class-odd="'odd'" ng-class-even="'even'">
+    <div class="row">
+      <div>
+        <h2>{{ content.title }}</h2>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-10">
+        {{ content.content }}
+      </div>
+      <div class="col-md-7 col-md-offset-5" ng-init="quoteObj = quotes[content.quote]">
+      <p>{{ quoteObj.highlight }}</p>
+      <p>{{ quoteObj.person }} <span>{{ quoteObj.role }} @ {{ quoteObj.organization }}</span></p>
+      <p><a href="#{{ quoteObj.id }}">full quote</a></p>
     </div>
-    <div class="col-md-9 lead">
-      {{ content.content }}
     </div>
+
   </div>
-  <hr>
-  <blockquote>
-    <p>"{{ content.quote }}"</p>
-    <footer>{{ content.person }} <cite title="Source Title">{{ content.role }} @ {{ content.organization }}</cite> <a href="#{{ content.id }}">full quote</a></footer>
-  </blockquote>
-  <hr>
-</div>
 </div>
