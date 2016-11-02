@@ -2,10 +2,10 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
 .controller('MainController', ['$scope', function($scope) {
   $scope.sName = 'Adam Mitchell';
   $scope.sTitle = 'Technical Director, Senior Developer & Web Technology Consultant';
-  $scope.skillsIntro = "<p>Being a fast learner and quick to adapt, I am always picking up new technologies and skills.Both of my long-term positions were for agencies focused on finding the right solution for clients, not just the easy solution.</p><p>At times, I have gained expert-level knowledge to support a technology for years and, at others, have dug in to legacy platforms for a single day's work. That adaptibility and perspective have allowed me to be a key part of nimble teams that require quick thinking, gear shifting, and learning new things every day.</p><p>Leveraging these various technologies and skills throughout my career has provided perspective on the similarities of the logic and solutions for various problems and given me the ability to quickly assess root-cause concerns and identify solutions that get to the true issue. The skills below reflect my most recent experience and are just a small set of the things I have worked with.</p>";
+  $scope.skillsIntro = "<p>Being a fast learner and quick to adapt, I am always picking up new technologies and skills. Both of my long-term positions were for agencies focused on finding the right solution for clients, not just the easy solution.</p><p>At times, I have gained expert-level knowledge to support a technology long-term and, at other times, I have dug in to legacy platforms for a single day's work on a client request. That adaptibility and perspective have allowed me to be a key part of nimble teams that require quick thinking, gear shifting, and constant learning.</p><p>Leveraging these various technologies and skills throughout my career has provided perspective on the similarities of the logic and solutions for various problems and given me the ability to quickly assess root-cause concerns and identify solutions that get to the true issue. The skills below reflect my most recent experience and are just a small set of the things I have worked with.</p>";
 
   $scope.contactInfo = {
-    content: "<p>I am currently on the market, seeking out my next position where I aspire to be a positive force for a talented and dedicated team of people working on exciting projects.</p><p>My interests in a new position are as broad as my experience, more than a specific role or set of tasks, I am seeking out a thought-provoking position where the team feels like family and I can feel like I made a difference every day and contributed to the team and company's success, however my skills may be leveraged getting there.</p><p>If I may be a fit for your team, I would love to hear from you.</p>",
+    content: "<p>I am currently seeking out my next position where I aspire to be a positive force for a talented and dedicated team of people working on exciting projects.</p><p>My interests in a new position are as broad as my experience. More than a specific role or set of tasks, I am seeking out a thought-provoking position where the team feels like family and I can feel like I make a difference and contribute to the team and company's success, however my skills may be leveraged getting there.</p><p>If I sound like a fit for your team, I would love to hear from you.</p>",
     links: [
       {
         title: "email",
@@ -27,6 +27,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       title: "Concepts",
       list: [
         "Content Management Systems",
+        "Excellent communication skills",
         "Technical Consulting and Speaking Tech to clients at all levels",
         "Integrations",
         "Migrations",
@@ -46,9 +47,9 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
         "CMS: Drupal, eZ Publish, WordPress",
         "Languages: PHP, Javascript, jQuery, AngularJS, HTML, Python",
         "Concepts: OOP, DevOps, Continuous Integration, SSO, SEO, Accessibility",
-        "Systems: LAMP stack, AWS, Unix, Apache, Apache SOLR Search, MySQL",
-        "Product Administration: JIRA, Confluence, HipChat",
-        "Software: Sublime, PHPStorm, Eclipse, Photoshop, Illustrator, InDesign, Visio"
+        "Systems: LAMP stack, AWS, Unix, Apache, Apache SOLR Search, MySQL, Git, Subversion",
+        "Product Administration: JIRA, Confluence, HipChat, GitLab",
+        "Software: Sublime, PHPStorm, Eclipse, Photoshop, Illustrator, InDesign, Visio, OSX (Preferred), Windows"
       ]
     },
     {
