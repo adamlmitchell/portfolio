@@ -1,7 +1,7 @@
 /* app css stylesheet */
 
 .nav, .navbar-header, h1, h2, h3 {
-  font-family: Courier;
+  font-family: 'Roboto Slab', serif;
 }
 
 h1.text-center {
@@ -9,6 +9,8 @@ h1.text-center {
   background-color: #ebb564;
   padding: 15px 0;
   margin-bottom: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .menu {

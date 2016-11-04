@@ -645,7 +645,6 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
   return {
     restrict: 'E',
     replace: false,
-    transclude: true,
     templateUrl:
     'ng/html/intro.html'
   };
@@ -654,7 +653,6 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
   return {
     restrict: 'E',
     replace: false,
-    transclude: true,
     templateUrl:
     'ng/html/jumbotron.html'
   };
