@@ -1,27 +1,24 @@
-<div class="container-fluid career">
-  <a class="jump" name="career"></a>
-  <h1 class="text-center">Career</h1>
-  <div class="container-fluid" ng-repeat="jobid in jobOrder" ng-init="job = positions[jobid]" ng-class-odd="'odd'" ng-class-even="'even'">
-    <a class="jump" name="{{ job.id }}"></a>
-    <div class="row">
-      <div class="col-md-8">
-        <div class="col-md-12">
-          <h3>{{ job.title }}</h3>
-          <h5>{{ job.location }}</h5>
-          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{ job.timeframe }}</small></p>
-        </div>
-        <div class="col-md-12 job-content">
-          <ng-bind-html ng-bind-html="job.content"></ng-bind-html>
-        </div>
+<a class="jump" name="career"></a>
+<h1 class="text-center">Career</h1>
+<div class="container-fluid" ng-repeat="jobid in jobOrder" ng-init="job = positions[jobid]" ng-class-odd="'odd'" ng-class-even="'even'">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="col-md-12">
+        <h3>{{ job.title }}</h3>
+        <h5>{{ job.location }}</h5>
+        <p><small><i class="glyphicon glyphicon-time"></i> {{ job.timeframe }}</small></p>
       </div>
-      <div class="col-md-4 project-list">
-          <h3>Project Highlights</h3>
-          <div class="job-project pull-right odd" ng-repeat="projectid in job.projects" ng-init="project = projects[projectid]" ng-class="{'highlight': project.content}">
-            <h5>{{ project.client }} {{ project.project }}</h5>
-            <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{ project.timeframe }}</small></p>
-            <a ng-show="project.content" href="#{{ project.id }}">Case study</a>
-          </div>
+      <div class="col-md-12 job-content">
+        <ng-bind-html ng-bind-html="job.content"></ng-bind-html>
       </div>
+    </div>
+    <div class="col-md-4 project-list">
+        <h3>Project Highlights</h3>
+        <div class="job-project pull-right odd" ng-repeat="projectid in job.projects" ng-init="project = projects[projectid]" ng-class="{'highlight': project.content}">
+          <h5>{{ project.client }} {{ project.project }}</h5>
+          <p><small><i class="glyphicon glyphicon-time"></i> {{ project.timeframe }}</small></p>
+          <a ng-show="project.content" href="#{{ project.id }}">View the case study</a>
+        </div>
     </div>
   </div>
 </div>

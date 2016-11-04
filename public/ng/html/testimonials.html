@@ -1,8 +1,6 @@
 <a class="jump" name="testimonials"></a>
-<div class="container grey">
-  <h1 class="text-center">Quotes</h1>
-<div class="container testimonials" ng-repeat="quoteid in quoteOrder" ng-init="quote = quotes[quoteid]">
-  <hr>
+<h1 class="text-center">Quotes</h1>
+<div class="container testimonials grey" ng-repeat="quoteid in quoteOrder" ng-init="quote = quotes[quoteid]" ng-class-odd="'odd'" ng-class-even="'even'">
   <a class="jump" name="{{ quote.id }}"></a>
   <div class="row">
     <div class="col-md-9 lead">
@@ -14,6 +12,4 @@
       <h3><small>{{ quote.organization }}</small></h3>
     </div>
   </div>
-</div>
-<hr>
 </div>

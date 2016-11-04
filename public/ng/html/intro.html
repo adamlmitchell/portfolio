@@ -1,6 +1,6 @@
 <a class="jump" name="intro"></a>
+<h1 class="text-center">Introduction</h1>
 <div class="container-fluid intro">
-  <h1 class="text-center">Introduction</h1>
   <div class="row" ng-repeat="content in introContent" ng-class-odd="'odd'" ng-class-even="'even'">
     <div class="col-md-7">
       <h2>{{ content.title }}</h2>
@@ -9,7 +9,7 @@
     <div class="col-md-5 callout" ng-init="quoteObj = quotes[content.quote]">
       <p class="quote">{{ quoteObj.highlight }}</p>
       <p class="attribution">{{ quoteObj.person }} - <span>{{ quoteObj.role }} @ {{ quoteObj.organization }}</span></p>
-      <p class="link"><a href="#{{ quoteObj.id }}">read the full quote</a></p>
+      <p class="link"><a href="#{{ quoteObj.id }}">Read the full quote</a></p>
     </div>
   </div>
 </div>

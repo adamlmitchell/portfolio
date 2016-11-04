@@ -1,12 +1,10 @@
 <a class="jump" name="contact"></a>
+<h1 class="text-center">Contact</h1>
 <div class="container-fluid contact">
-  <h1 class="text-center">Contact</h1>
-  <p class="lead">
+  <div class="lead">
     <ng-bind-html ng-bind-html="contactInfo.content"></ng-bind-html>
-  </p>
-  <ul class="lead">
-    <li ng-repeat="link in contactInfo.links">
-      {{ link.title }}: <a href="{{ link.link }}"{{ link.targetBlank?' target="_blank"':'' }}>{{ link.linkText}}</a>
-    </li>
-  </ul>
+  </div>
+  <div class="col-md-4 col-offset-4" ng-repeat="link in contactInfo.links">
+    <h4>{{ link.title }}: <a href="{{ link.link }}"{{ link.targetBlank?' target="_blank"':'' }}>{{ link.linkText}}</a></h4>
+  </div>
 </div>

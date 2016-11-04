@@ -2,10 +2,10 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
 .controller('MainController', ['$scope', function($scope) {
   $scope.sName = 'Adam Mitchell';
   $scope.sTitle = 'Technical Director, Senior Developer & Web Technology Consultant';
-  $scope.skillsIntro = "<p>Being a fast learner and quick to adapt, I am always picking up new technologies and skills. Both of my long-term positions were for agencies focused on finding the right solution for clients, not just the easy solution.</p><p>At times, I have gained expert-level knowledge to support a technology long-term and, at other times, I have dug in to legacy platforms for a single day's work on a client request. That adaptibility and perspective have allowed me to be a key part of nimble teams that require quick thinking, gear shifting, and constant learning.</p><p>Leveraging these various technologies and skills throughout my career has provided perspective on the similarities of the logic and solutions for various problems and given me the ability to quickly assess root-cause concerns and identify solutions that get to the true issue. The skills below reflect my most recent experience and are just a small set of the things I have worked with.</p>";
+  $scope.skillsIntro = "<p>A fast learner and quick to adapt, I am always picking up new technologies and skills.</p><p>My long-term positions have been for agencies focused on finding the right solution for clients, not just the easy solution. Those environments have led me to develop a skillset that is both technology and people focused.</p><p>At times, I have gained expert-level knowledge to support a technology long-term and, at other times, I have dug into legacy platforms for a single day's work on a client request. That adaptibility and perspective have allowed me to be a key part of nimble teams that require quick thinking, gear shifting, and constant learning.</p><p>Leveraging these various technologies and skills throughout my career has provided perspective on the similarities of the logic and solutions for various problems and given me the ability to quickly assess root-cause concerns and identify solutions that get to the true issue. These skills reflect my most recent experience and are just a subset of the things I have worked with.</p>";
 
   $scope.contactInfo = {
-    content: "<p>I am currently seeking out my next position where I aspire to be a positive force for a talented and dedicated team of people working on exciting projects.</p><p>My interests in a new position are as broad as my experience. More than a specific role or set of tasks, I am seeking out a thought-provoking position where the team feels like family and I can feel like I make a difference and contribute to the team and company's success, however my skills may be leveraged getting there.</p><p>If I sound like a fit for your team, I would love to hear from you.</p>",
+    content: "<p>I am currently seeking out my next position where I aspire to be a positive force for a talented and dedicated team of people working on exciting projects.</p><p>My interests in a new position are as broad as my experience. More than a specific role or set of tasks, I am seeking out a thought-provoking position where the team feels like family and I can feel like I make a difference. I thrive on contributing to the team and company's success however my skills may be leveraged to get us there.</p><p>If it sounds like we can accomplish great things together I would love to hear from you.</p>",
     links: [
       {
         title: "email",
@@ -38,7 +38,6 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
         "Full SDLC",
         "Change management",
         "Agile workflows"
-
       ]
     },
     {
@@ -62,8 +61,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
         "Experience staffing in matrixed environment",
         "Experience estimating and planning $250k+ projects",
         "Experience managing and mentoring junior resources",
-        "Sub-contractor management",
-
+        "Sub-contractor management"
       ]
     }
   ];
@@ -127,7 +125,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
         '<li>Coordinated project timelines and development tasks for multiple internal business units.</li>'+
         '<li>Assisted with the creation and implementation of full SLDC project management process for IT department.</li>'+
         '</ul>',
-      projects: []
+      projects: ["am"]
     },
     "swx-tm" : {
       id: 'swx-tm',
@@ -180,7 +178,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       title: 'Development Intern',
       location: 'Siteworx, Inc.',
       timeframe: 'January 2004 - March 2004',
-      content: '<p>Temporarily relocated to Reston, Virginia and started with 3 month internship between college semesters.</p><p>Siteworx was still a small shop at the time and I was one of 8 employees. Initially the position was not meant to have specific goals and was instead intended to merely be an introduction to working in the industry and a test to see if Siteworx could fill time for someone in a junior capacity.</p><p>Based on my performance on early tasks, the complexity and amount of tasks I was given escalated quickly and 2 months in to the internship, I was offered a full time position as a software developer. Given that I had quickly become an integral part of their small team, I chose to permanently relocate to Reston to continue with the position.</p>',
+      content: '<p>Temporarily relocated to Reston, Virginia and started with 3 month internship between college semesters.</p><p>Siteworx was still a small shop at the time and I was one of 8 employees. Initially the position was not meant to have specific goals and was instead intended to merely be an introduction to working in the industry and a test to see if Siteworx could fill time for someone in a junior capacity.</p><p>Based on my performance on early tasks, the complexity and amount of tasks I was given escalated quickly and 2 months into the internship, I was offered a full time position as a software developer. Given that I had quickly become an integral part of their small team, I chose to permanently relocate to Reston to continue with the position.</p>',
       projects: ["hh"]
     },
     "siue" : {
@@ -189,7 +187,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       location: 'Southern Illinois University Edwardsville Textbook Service',
       timeframe: 'March 2002 - December 2003',
       content: '<p>Worked as office assistant while attending college.</p><p>As part of my work in this position I provided some feedback about their custom internal rental system application, which had been written over many years by a single resource as screen-based database code in Paradox 4.5. That feedback led to eventually debugging, maintaining, and re-architecting many pieces of the application myself, becoming the first student worker to assist with the program.</p>',
-      projects: ["hh"]
+      projects: ["tbs"]
     }
   };
 
@@ -258,7 +256,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
     },
     "fcgp" : {
       id: 'fcgp',
-      title: "Foundation Center's GlassPockets",
+      client: "Foundation Center's GlassPockets",
       project: "eZ Publish CMS Build",
       location: 'Beaconfire RED',
       timeframe: 'Fall 2014 - Spring 2015',
@@ -413,7 +411,17 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       location: 'Beaconfire RED',
       timeframe: 'Summer - Fall 2009',
       description: 'Acted as Senior Developer on rework and enhancements to existing custom data collection and reporting tool. Included Google Earth integration.',
-      content: "<p>One of my first projects at Beaconfire was for the Ocean Conservancy. For this project, Beaconfire had already created a custom application for the collection of data during OC's annual International Coastal Cleanup. The part of the project I was brought on for was the Google Earth integration.</p><p>The ICC event includes volunteers from around the world cleaning up waterways and providing data about what debris they found via paper scorecards. The system that Beaconfire was responsible for processed those scorecards and held the historical and analytical data about them. The Google Earth portion of the project was a focus on converting that location data to points that could be plotted in Google Earth using a KML file.</p><p>My work included digging in to the KML format, prepping the data for use in the KML file, architecting the region-based structure of the incrementally loading and clustered KML files, and implementing the full solution, including additional caching and API work to offset the server load.</p><p>As a result, the Ocean Conservancy was able to leverage their data in a more engaging way and help communicate the impact of their clean up efforts to donors and stakeholders alike.</p>",
+      content: "<p>One of my first projects at Beaconfire was for the Ocean Conservancy. For this project, Beaconfire had already created a custom application for the collection of data during OC's annual International Coastal Cleanup. The part of the project I was brought on for was the Google Earth integration.</p><p>The ICC event includes volunteers from around the world cleaning up waterways and providing data about what debris they found via paper scorecards. The system that Beaconfire was responsible for processed those scorecards and held the historical and analytical data about them. The Google Earth portion of the project was a focus on converting that location data to points that could be plotted in Google Earth using a KML file.</p><p>My work included digging into the KML format, prepping the data for use in the KML file, architecting the region-based structure of the incrementally loading and clustered KML files, and implementing the full solution, including additional caching and API work to offset the server load.</p><p>As a result, the Ocean Conservancy was able to leverage their data in a more engaging way and help communicate the impact of their clean up efforts to donors and stakeholders alike.</p>",
+      screenshots: false
+    },
+    "am" : {
+      id: 'am',
+      client: "Atlantic Media",
+      project: "SLDC Oversight Process Revamp",
+      location: 'Atlantic Media',
+      timeframe: 'June 2008 - December 2008',
+      description: '',
+      content: '',
       screenshots: false
     },
     "cccu" : {
@@ -433,7 +441,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       location: 'Siteworx, Inc.',
       timeframe: 'Fall 2007 - Spring 2008',
       description: 'Acted as Primary Consultant for Goodwill internal site revamp.',
-      content: "<p>The Goodwill project was a targeted consultation on user feedback about the usability of their members' site. My role was as principle consultant to help their internal team organize and interpret feedback into an actionable plan for the organization. The primary concern was feedback from the users that the site 'took too many clicks'. The team was in the throws of attempting to streamline the site as much as possible but found only more negative feedback in the process.</p><p>My insight coming in to the project from outside was that 'too many clicks' was potentially near the problem but not the specific problem users were having. Working with the group to reinterpret the feedback and pivoting from the original statement, we started to work against an expanded version of the feedback I suggested: 'too many unsure clicks.' From there, things started to fall in to place as we reworked the first few levels of their navigation to include more clicks in the path for the user but place heavy focus on keeping the path intuitive. This included focusing less on reducing the number of clicks, which had caused a lot of things to be placed in a very long menu, and more on making sure that each click was an intuitive step between the previous click and the next step towards the destination.</p><p>The streamlined path for the end users included clarification of similar terms and an iconography and color-coding vocablary that reassured users they were on the right track through the system. My involvement ended before the implementation phase but feedback from key stakeholders was that, with my help, we had 'found the missing piece' and 'finally made sense of the feedback.'</p>",
+      content: "<p>The Goodwill project was a targeted consultation on user feedback about the usability of their members' site. My role was as principle consultant to help their internal team organize and interpret feedback into an actionable plan for the organization. The primary concern was feedback from the users that the site 'took too many clicks'. The team was in the throws of attempting to streamline the site as much as possible but found only more negative feedback in the process.</p><p>My insight coming into the project from outside was that 'too many clicks' was potentially near the problem but not the specific problem users were having. Working with the group to reinterpret the feedback and pivoting from the original statement, we started to work against an expanded version of the feedback I suggested: 'too many unsure clicks.' From there, things started to fall into place as we reworked the first few levels of their navigation to include more clicks in the path for the user but place heavy focus on keeping the path intuitive. This included focusing less on reducing the number of clicks, which had caused a lot of things to be placed in a very long menu, and more on making sure that each click was an intuitive step between the previous click and the next step towards the destination.</p><p>The streamlined path for the end users included clarification of similar terms and an iconography and color-coding vocablary that reassured users they were on the right track through the system. My involvement ended before the implementation phase but feedback from key stakeholders was that, with my help, we had 'found the missing piece' and 'finally made sense of the feedback.'</p>",
       screenshots: false
     },
     "abi" : {
@@ -530,8 +538,8 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
     },
     "tbs" : {
       id: 'tbs',
-      client: "SIUE Textbook Service Internal Software Revamp",
-      project: "Legacy Technology Refresh",
+      client: "SIUE Textbook Service",
+      project: "Internal Software Revamp",
       location: 'Southern Illinois University Edwardsville Textbook Service',
       timeframe: 'Fall 2002 - Fall 2003',
       description: "Went beyond duties as office assistant to help revamp / repair internal legacy textbook rental software written directly in Paradox 4.5 database software.",
@@ -588,7 +596,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
    {
       id: "dev",
       title: "Developer",
-      content: "I have always been drawn to computers. From my early days tinkering with programs on my TI-83 calculator and teaching myself the basics of HTML on my first desktop computer to recently digging in to AngularJS and Bootstrap, I have always had a desire to learn more about how things work under the hood. That curiosity has led me to a career in development with a breadth of web technologies and solutions including primary web technologies (HTML, CSS, JavaScript), LAMP stack, various languages (PHP, Java, Python, and more), and a specific focus on CMS platform technologies (Drupal, eZ Publish, WordPress, etc). Throughout my time in the web industry, I have become very familiar with the challenges of web builds, both common and uncommon.",
+      content: "I have always been drawn to computers. From my early days tinkering with programs on my TI-83 calculator and teaching myself the basics of HTML on my first desktop computer to recently digging into AngularJS and Bootstrap, I have always had a desire to learn more about how things work under the hood. That curiosity has led me to a career in development with a breadth of web technologies and solutions including primary web technologies (HTML, CSS, JavaScript), LAMP stack, various languages (PHP, Java, Python, and more), and a specific focus on CMS platform technologies (Drupal, eZ Publish, WordPress, etc). Throughout my time in the web industry, I have become very familiar with the challenges of web builds, both common and uncommon.",
       quote: "cguy"
     },
     {
@@ -606,7 +614,7 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
     {
       id: "consult",
       title: "Consensus Builder",
-      content: "While I have a breadth of experience with all parts of development, what always engages me the most are the collaborative and brainstorming aspects. I love to dig in to a problem, put heads down with others, and work towards a smart solution. I am very pragmatic and tend to emerge as a thought-leader, working to identify the best path forward. In addition to my own contributions, I often reinforce others' opinions and give a voice to the best ideas no matter where or who they come from.",
+      content: "While I have a breadth of experience with all parts of development, what always engages me the most are the collaborative and brainstorming aspects. I love to dig into a problem, put heads down with others, and work towards a smart solution. I am very pragmatic and tend to emerge as a thought-leader, working to identify the best path forward. In addition to my own contributions, I often reinforce others' opinions and give a voice to the best ideas no matter where or who they come from.",
       quote: "danderson"
     },
     {

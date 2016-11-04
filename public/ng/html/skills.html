@@ -1,15 +1,15 @@
 <a class="jump" name="skills"></a>
+<h1 class="text-center">Expertise</h1>
 <div class="container-fluid grey">
-  <h1 class="text-center">Expertise</h1>
-  <div class="lead">
+  <div class="col-md-5 lead">
     <ng-bind-html ng-bind-html="skillsIntro"></ng-bind-html>
   </div>
-  <div class="row skills">
-  <div class="col-md-4 skill" ng-repeat="skill in skills">
-    <h2>{{ skill.title }}</h2>
-    <ul>
-      <li ng-repeat="item in skill.list">{{ item }}</li>
-    </ul>
+  <div class="col-md-7 skills">
+    <div class="col-md-12 skill" ng-repeat="skill in skills" ng-class-odd="'odd'" ng-class-even="'even'">
+      <h2>{{ skill.title }}</h2>
+      <ul>
+        <li ng-repeat="item in skill.list">{{ item }}</li>
+      </ul>
+    </div>
   </div>
-</div>
 </div>

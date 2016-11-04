@@ -4,6 +4,13 @@
   font-family: Courier;
 }
 
+h1.text-center {
+  width: 100%;
+  background-color: #ebb564;
+  padding: 15px 0;
+  margin-bottom: 0;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -41,6 +48,7 @@ body, html {
     background-attachment: fixed;
     background-position: center 100px;
     background-repeat: no-repeat;
+    background-color: #fff;
 }
 
 .parallax-hh {
@@ -93,6 +101,10 @@ img.logo {
   overflow:hidden;
 }
 
+.testimonials .lead {
+  font-style: italic;
+}
+
 div.lead, .job-content {
   padding-top: 15px;
 }
@@ -117,6 +129,7 @@ div.lead, .job-content {
   background-image: url(assets/headshot/amitchell.png);
   background-repeat: no-repeat;
   background-position: bottom left;
+  border-bottom: 5px solid #ebb564;
 }
 
 .jumbotron-logo {
@@ -151,7 +164,7 @@ div.lead, .job-content {
 }
 
 .even {
-  /* background-color: #a5a3a4; */
+  background-color: #fff;
   color: #1a0b00;
 }
 
@@ -196,7 +209,7 @@ div.lead, .job-content {
   margin:0;
 }
 
-.job-project.odd {
+.job-project.odd, .skill.odd {
   background-color: #8ca2b9;
 }
 
