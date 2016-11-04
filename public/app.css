@@ -149,3 +149,66 @@ div.lead, .job-content {
     display: none;
   }
 }
+
+.even {
+  /* background-color: #a5a3a4; */
+  color: #1a0b00;
+}
+
+.even .callout {
+  background-color: #ebb564;
+  color: #1a0b00;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 15px;
+  margin: 25px 0;
+}
+
+.odd {
+  background-color: #eee;
+  color: #000E1A;
+}
+
+.odd .callout {
+  background-color: #8ca2b9;
+  color: #000E1A;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 15px;
+  margin: 25px 0;
+}
+
+.callout .quote {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.attribution span {
+  font-style: italic;
+}
+
+.job-project {
+  padding: 10px 15px;
+}
+
+.job-project h3, .job-project h5, .job-project p {
+  margin:0;
+}
+
+.job-project.odd {
+  background-color: #8ca2b9;
+}
+
+.job-project.odd, .job-project.even {
+  width: 90%;
+  min-width:90%;
+}
+
+.job-project.highlight {
+  background-color: #ebb564;
+  color: #1a0b00;
+  width: 100% !important;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}

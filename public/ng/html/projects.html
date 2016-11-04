@@ -1,11 +1,11 @@
 <div class="container-fluid projects">
   <a class="jump" name="projects"></a>
   <h1 class="text-center">Projects</h1>
-  <div class="container-fluid" ng-repeat="project in projects">
+  <div class="container-fluid" ng-repeat="projectid in caseStudies" ng-init="project = projects[projectid]">
     <a class="jump" name="{{ project.id }}"></a>
     <div class="row">
       <div class="col-md-8">
-        <h3>{{ project.title }}</h3>
+        <h3>{{ project.client }} {{ project.project }}</h3>
         <h5>{{ project.location }}</h5>
         <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{ project.timeframe }}</small></p>
         <ng-bind-html ng-bind-html="project.content"></ng-bind-html>
