@@ -1,11 +1,15 @@
 var app = angular.module("PortfolioApp", ["ngSanitize"])
 .controller('MainController', ['$scope', function($scope) {
   $scope.sName = 'Adam Mitchell';
-  $scope.sTitle = 'Technical Director, Senior Developer & Web Technology Consultant';
-  $scope.skillsIntro = "<p>A fast learner and quick to adapt, I am always picking up new technologies and skills.</p><p>My long-term positions have been for agencies focused on finding the right solution for clients, not just the easy solution. Those environments have led me to develop a skillset that is both technology and people focused.</p><p>At times, I have gained expert-level knowledge to support a technology long-term and, at other times, I have dug into legacy platforms for a single day's work on a client request. That adaptibility and perspective have allowed me to be a key part of nimble teams that require quick thinking, gear shifting, and constant learning.</p><p>Leveraging these various technologies and skills throughout my career has provided perspective on the similarities of the logic and solutions for various problems and given me the ability to quickly assess root-cause concerns and identify solutions that get to the true issue. These skills reflect my most recent experience and are just a subset of the things I have worked with.</p>";
+  $scope.sTitle = 'Senior Web Developer with Consulting and Management Experience';
+  $scope.intro = 'Senior Web Developer First, Versatile Collaborator Second.';
+
+  $scope.about = 'My focus has always been on development but my drive to improve and make an impact has also given me a diverse set of secondary skills beyond classical development. I have spent my career not only being a senior developer but also adapting to be a key part of pushing projects and teams forward.';
+
+  $scope.skillsIntro = "<p>A fast learner, quick to adapt, and driven to improve, I am always picking up new technologies and skills.</p><p>My long-term positions have been for agencies focused on finding the right solution for clients, not just the easy solution. Those environments have led me to develop a skillset that is both technology and people focused.</p><p>At times, I have gained expert-level knowledge to support a technology long-term and, at other times, I have dug into legacy platforms for a single day's work on a client request. That adaptibility and perspective have allowed me to be a key part of nimble teams that require quick thinking, gear shifting, and constant learning.</p><p>Leveraging these various technologies and skills throughout my career has provided perspective on the similarities of the logic and solutions for various problems and given me the ability to quickly assess root-cause concerns and identify solutions that get to the true issue. These skills reflect my most recent experience and are just a subset of the things I have worked with.</p>";
 
   $scope.contactInfo = {
-    content: "<p>I am currently seeking out my next position where I aspire to be a positive force for a talented and dedicated team of people working on exciting projects.</p><p>My interests in a new position are as broad as my experience. More than a specific role or set of tasks, I am seeking out a thought-provoking position where the team feels like family and I can feel like I make a difference. I thrive on contributing to the team and company's success however my skills may be leveraged to get us there.</p><p>If it sounds like we can accomplish great things together I would love to hear from you.</p>",
+    content: "<p>I am currently seeking out my next position where I can leverage my development expertise. I aspire to be a positive force for a talented and dedicated team of people working on exciting projects.</p><p>I am seeking out a thought-provoking position where the team feels like family and I can feel like my contributions make a difference. I thrive on both team and company success however my skills may be leveraged to get us there.</p><p>If it sounds like we can accomplish great things together I would love to hear from you.</p>",
     links: [
       {
         title: "email",
@@ -43,17 +47,21 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
     {
       title: "Technology",
       list: [
+        "12+ Years as a Web Developer, 10+ at Senior Level",
+        "Development work has continued through all positions and is current",
         "CMS: Drupal, eZ Publish, WordPress",
         "Languages: PHP, Javascript, jQuery, AngularJS, HTML, Python",
-        "Concepts: OOP, DevOps, Continuous Integration, SSO, SEO, Accessibility",
+        "Concepts: OOP, DevOps, Continuous Integration, SSO, SEO, Accessibility, Virtulization, Hosting, Cloud Servers (AWS / Linode / BlackMesh)",
         "Systems: LAMP stack, AWS, Unix, Apache, Apache SOLR Search, MySQL, Git, Subversion",
         "Product Administration: JIRA, Confluence, HipChat, GitLab",
-        "Software: Sublime, PHPStorm, Eclipse, Photoshop, Illustrator, InDesign, Visio, OSX (Preferred), Windows"
+        "Software: Sublime, PHPStorm, Eclipse, Photoshop, Illustrator, InDesign, Visio, OSX (Preferred), Windows",
+        "Exposure to or light use of many other technologies as well"
       ]
     },
     {
       title: "Management",
       list: [
+        "Working Manager: management postions all included continued senior-level development work, allowing me to stay current with development skills",
         "Director experience overseeing technical department",
         "12+ years experience in agency environment",
         "Attuned to fast pace and multi-tasking",
@@ -71,18 +79,17 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
   $scope.positions = {
     "bf-techdir" : {
       id: 'bf-techdir',
-      title: 'Director of Technology',
+      title: 'Technical Lead with Director of Technology duties',
       location: 'Beaconfire RED',
       timeframe: 'July 2015 - September 2016',
       content: '<p>Assumed Technical Director position alongside continued Technical Lead position.</p><ul>'+
-      '<li>Internally promoted from Tech Lead role</li>'+
+      '<li>Continued hands on coding, splitting time between Technical Lead role (70%) and Technical Director role (30%)</li>'+
       '<li>Managed hierarchical tech team of 12 developers</li>'+
       '<li>Developed internal team goals and milestones for department improvement</li>'+
       '<li>Responsible for consulting, problem solving, and mentoring resources on all aspects of CMS builds and integrations, including: CMS architecture, 3rd party systems integration, search engine configuration (SOLR), caching, SEO, semantic content</li>'+
       '<li>Architected and developed integrated CMS solutions in Drupal and WordPress</li>'+
       '<li>Consulted with clients and team members from various departments on project goals, approach, requirements, timeline, budgets, software selection, vendor selection, content migration, and hosting</li>'+
       '<li>Consulted internally on tools, processes, and efficiency of operations</li>'+
-      '<li>Performed Technical Lead duties alongside Tech Director duties</li>'+
       '<li>Worked remotely from St. Louis metro area</li>'+
       '</ul>',
       projects: ["calsol", "chf", "alz", "nwhm"]
@@ -118,10 +125,11 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
     },
     "am" : {
       id: 'am',
-      title: 'Project Manager with Technical Focus',
+      title: 'Technical Consultant / Liason (official title: Project Manager with Technical Focus)',
       location: 'Atlantic Media',
       timeframe: 'June 2008 - March 2009',
       content: '<p>After leaving Siteworx, I went to Atlantic Media Company, producers of The National Journal, Congress Daily, and The Atlantic Monthly. While my title was Project Manager, the primary focus of my role was to function as the technical liason between the IT/development team and the various business units within the organization.</p><ul>'+
+        '<li>De-mystified technology solutions with C-level executives of all business units, working towards unified solutions for shared problems.</li>'+
         '<li>Coordinated project timelines and development tasks for multiple internal business units.</li>'+
         '<li>Assisted with the creation and implementation of full SLDC project management process for IT department.</li>'+
         '</ul>',
@@ -129,10 +137,11 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
     },
     "swx-tm" : {
       id: 'swx-tm',
-      title: 'Technical Manager',
+      title: 'Technical Manager with Continued Senior Developer Duties',
       location: 'Siteworx, Inc.',
       timeframe: 'June 2006 - March 2009',
       content: '<p>As Siteworx had grown to then have a technical team of 30 developers, they underwent a restructuring that saw me promoted to one of 4 Technical Manager positions in charge of handling personnel, staffing, project, and development management for a team of 7 developers.</p><ul>'+
+        '<li>Continued work as Senior Developer, splitting time between Sr Dev role (60%) and Tech Manager role (40%)</li>'+
         '<li>Directly managed and coordinated team of 7 developers to successfully complete multiple simultaneous projects.</li>'+
         '<li>Worked closely with team leads from various disciplines to manage projects through full life cycle.</li>'+
         '<li>Managed customer relationships effectively and worked closely with account lead to grow accounts and pursue up sell opportunities. Clients included associations and nonprofit organizations.</li>'+
@@ -595,14 +604,14 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
   $scope.introContent = [
    {
       id: "dev",
-      title: "Developer",
+      title: "Senior Web Developer",
       content: "I have always been drawn to computers. From my early days tinkering with programs on my TI-83 calculator and teaching myself the basics of HTML on my first desktop computer to recently digging into AngularJS and Bootstrap, I have always had a desire to learn more about how things work under the hood. That curiosity has led me to a career in development with a breadth of web technologies and solutions including primary web technologies (HTML, CSS, JavaScript), LAMP stack, various languages (PHP, Java, Python, and more), and a specific focus on CMS platform technologies (Drupal, eZ Publish, WordPress, etc). Throughout my time in the web industry, I have become very familiar with the challenges of web builds, both common and uncommon.",
       quote: "cguy"
     },
     {
       id: "solve",
       title: "Problem Solver",
-      content: "With more than a dozen years of experience in the web tech industry, I have a versatile background which includes experience as a developer, technical team lead, UX architect, project manager, technical consultant, and technical director. I am a quick learner and have spent most of my career being a collaborator and leader that fills in the gaps, playing a necessary but ill-defined role of problem solver and team force multiplier.",
+      content: "I am a quick learner and have spent most of my career being a collaborator and leader that fills in the gaps, playing a necessary but ill-defined role of problem solver and team force multiplier. With more than a dozen years of experience in the web tech industry, my primary focus has always been on senior-level development, my background also includes experience splitting time as a technical team lead, UX architect, project manager, technical consultant, and technical director.",
       quote: "mrogers"
     },
     {
