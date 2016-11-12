@@ -128,14 +128,14 @@ div.lead, .job-content {
   padding-bottom: 0;
   padding-top: 0;
   background-color: #a5a3a4;
-  background-image: url(assets/headshot/amitchell.png);
+  background-image: url(assets/headshot/adam_mitchell_b_full.png);
   background-repeat: no-repeat;
   background-position: bottom left;
   border-bottom: 5px solid #ebb564;
 }
 
 .jumbotron-logo {
-  padding-top: 8%;
+  padding-top: 10%;
   padding-bottom: 2%;
 }
 
