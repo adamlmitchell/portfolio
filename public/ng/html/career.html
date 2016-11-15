@@ -9,7 +9,11 @@
         <p><small><i class="glyphicon glyphicon-time"></i> {{ job.timeframe }}</small></p>
       </div>
       <div class="col-md-12 job-content">
-        <ng-bind-html ng-bind-html="job.content"></ng-bind-html>
+        <ng-bind-html ng-bind-html="job.overview"></ng-bind-html>
+        <ul ng-show="job.list">
+          <li ng-repeat="item in job.list">{{ item }}</li>
+        </ul>
+
       </div>
     </div>
     <div class="col-md-4 project-list">

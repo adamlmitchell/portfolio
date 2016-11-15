@@ -7,7 +7,9 @@
       <h3>{{ project.client }} {{ project.project }}</h3>
       <h5>{{ project.location }}</h5>
       <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{ project.timeframe }}</small></p>
-      <ng-bind-html ng-bind-html="project.content"></ng-bind-html>
+      <div class="project-content">
+        <ng-bind-html ng-bind-html="project.content"></ng-bind-html>
+      </div>
     </div>
     <div class="col-md-4">
         <img class="logo" ng-src="img/{{ project.id }}_logo.png">

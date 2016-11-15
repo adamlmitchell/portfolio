@@ -107,6 +107,10 @@ img.logo {
   font-style: italic;
 }
 
+.testimonials .row {
+  padding-bottom: 55px;
+}
+
 div.lead, .job-content {
   padding-top: 15px;
 }
@@ -145,6 +149,18 @@ div.lead, .job-content {
   max-width: 35%;
   text-align: right;
   clear:right;
+}
+
+.contact-headshot {
+  margin-top: 15px;
+  padding-bottom: 0;
+  padding-top: 0;
+  height: 400px;
+  background-color: #a5a3a4;
+  background-image: url(assets/headshot/adam_mitchell_b_full.png);
+  background-repeat: no-repeat;
+  background-position-x: -65px;
+  background-position-y: bottom;
 }
 
 @media (max-width: 1000px) {
@@ -203,7 +219,11 @@ div.lead, .job-content {
   font-style: italic;
 }
 
-.job-project {
+.job-content, .project-content  {
+  font-size: 1.2em;
+}
+
+.job-project{
   padding: 10px 15px;
 }
 

@@ -28,6 +28,20 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
 
   $scope.skills = [
     {
+      title: "Technology",
+      list: [
+        "12+ Years as a Web Developer, 10+ at Senior Level",
+        "Development work has continued through all positions and is current",
+        "CMS: Drupal, eZ Publish, WordPress",
+        "Languages: PHP, Javascript, jQuery, AngularJS, HTML, Python",
+        "Concepts: OOP, DevOps, Continuous Integration, SSO, SEO, Accessibility, Virtulization, Hosting, Cloud Servers (AWS / Linode / BlackMesh)",
+        "Systems: LAMP stack, AWS, Unix, Apache, Apache SOLR Search, MySQL, Git, Subversion",
+        "Product Administration: JIRA, Confluence, HipChat, GitLab",
+        "Software: Sublime, PHPStorm, Eclipse, Photoshop, Illustrator, InDesign, Visio, OSX (Preferred), Windows",
+        "Exposure to or light use of many other technologies as well"
+      ]
+    },
+    {
       title: "Concepts",
       list: [
         "Content Management Systems",
@@ -42,20 +56,6 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
         "Full SDLC",
         "Change management",
         "Agile workflows"
-      ]
-    },
-    {
-      title: "Technology",
-      list: [
-        "12+ Years as a Web Developer, 10+ at Senior Level",
-        "Development work has continued through all positions and is current",
-        "CMS: Drupal, eZ Publish, WordPress",
-        "Languages: PHP, Javascript, jQuery, AngularJS, HTML, Python",
-        "Concepts: OOP, DevOps, Continuous Integration, SSO, SEO, Accessibility, Virtulization, Hosting, Cloud Servers (AWS / Linode / BlackMesh)",
-        "Systems: LAMP stack, AWS, Unix, Apache, Apache SOLR Search, MySQL, Git, Subversion",
-        "Product Administration: JIRA, Confluence, HipChat, GitLab",
-        "Software: Sublime, PHPStorm, Eclipse, Photoshop, Illustrator, InDesign, Visio, OSX (Preferred), Windows",
-        "Exposure to or light use of many other technologies as well"
       ]
     },
     {
@@ -82,16 +82,17 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       title: 'Technical Lead with Director of Technology duties',
       location: 'Beaconfire RED',
       timeframe: 'July 2015 - September 2016',
-      content: '<p>Assumed Technical Director position alongside continued Technical Lead position.</p><ul>'+
-      '<li>Continued hands on coding, splitting time between Technical Lead role (70%) and Technical Director role (30%)</li>'+
-      '<li>Managed hierarchical tech team of 12 developers</li>'+
-      '<li>Developed internal team goals and milestones for department improvement</li>'+
-      '<li>Responsible for consulting, problem solving, and mentoring resources on all aspects of CMS builds and integrations, including: CMS architecture, 3rd party systems integration, search engine configuration (SOLR), caching, SEO, semantic content</li>'+
-      '<li>Architected and developed integrated CMS solutions in Drupal and WordPress</li>'+
-      '<li>Consulted with clients and team members from various departments on project goals, approach, requirements, timeline, budgets, software selection, vendor selection, content migration, and hosting</li>'+
-      '<li>Consulted internally on tools, processes, and efficiency of operations</li>'+
-      '<li>Worked remotely from St. Louis metro area</li>'+
-      '</ul>',
+      overview: '<p>Assumed Technical Director position alongside continued Technical Lead position.</p>',
+      list: [
+        "Continued hands on coding, splitting time between Technical Lead role (70%) and Technical Director role (30%)",
+        "Managed hierarchical tech team of 12 developers",
+        "Developed internal team goals and milestones for department improvement",
+        "Responsible for consulting, problem solving, and mentoring resources on all aspects of CMS builds and integrations, including: CMS architecture, 3rd party systems integration, search engine configuration (SOLR), caching, SEO, semantic content",
+        "Architected and developed integrated CMS solutions in Drupal and WordPress",
+        "Consulted with clients and team members from various departments on project goals, approach, requirements, timeline, budgets, software selection, vendor selection, content migration, and hosting",
+        "Consulted internally on tools, processes, and efficiency of operations",
+        "Worked remotely from St. Louis metro area"
+      ],
       projects: ["calsol", "chf", "alz", "nwhm"]
     },
     "bf-tlmgr" : {
@@ -99,7 +100,8 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       title: 'Promoted to Technical Lead with Personnel Manager duties',
       location: 'Beaconfire RED',
       timeframe: 'June 2014 - September 2016',
-      content: '<p>Took on additional responsibilities as Personnel Manager for the development department.</p>',
+      overview: '<p>Took on additional responsibilities as Personnel Manager for the development department.</p>',
+      list: [],
       projects: ["lsc", "wahc", "fcgp", "als", "hki", "ucs", "ti", "afsp"]
     },
     "bf-dev" : {
@@ -107,20 +109,21 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       title: 'Technical Lead',
       location: 'Beaconfire RED',
       timeframe: 'March 2009 - June 2014',
-      content: '<p>In early 2009, I hired on with Beaconfire RED as a Senior Developer initially but was quickly transitioned to a Technical Lead.</p><ul>'+
-        '<li>Delivered tailored, effective solutions through evaluating, architecting, and implementing various web-based technologies including both 3rd party and open source platforms and tools</li>'+
-        '<li>Responsible for architecting solutions and breaking them down into components and individual tasks to delegate to team</li>'+
-        '<li>Accountable for consulting and leading development of solution, approach, estimates, budgets, timeline, project plan, and day to day management of tasks for projects led</li>'+
-        '<li>Primary technologies were eZ Publish, Drupal, custom PHP applications, HTML, CSS, and 3rd party API integration</li>'+
-        '<li>Championed and led internal efforts to adopt industy best-practices, including consistent use of source control and ticketing systems</li>'+
-        '<li>Led full team through migration from projcets with no source control to Subversion and later to Git</li>'+
-        '<li>Administered Atlassian products including JIRA and Confluence. Responsibilities included full design and implementation of end-to-end workflow in JIRA, construction of templates and spaces in Confluence, and full integration of the two products</li>'+
-        '<li>Responsible for developing and implementing solutions for large-scale data migrations including database extraction, API, and screen-scraping techniques</li>'+
-        '<li>Conducted several full-scale CMS product comparisons for clients, including determining client concerns & primary needs, coordinating product demos, and consulting on final evaluation & decisions</li>'+
-        '<li>Developed and maintained high-quality client relationships built on open and honest communication</li>'+
-        '<li>Was a member of People Committee - an employee-led group of employees in charge of running the annual staff survey and interpreting / reporting findings to the Senior Leadership team and owners of the company</li>'+
-        '<li>Transitioned to full time remote position from the St Louis metro area in July 2012</li>'+
-        '</ul>',
+      overview: '<p>In early 2009, I hired on with Beaconfire RED as a Senior Developer initially but was quickly transitioned to a Technical Lead.</p>',
+      list: [
+      	"Delivered tailored, effective solutions through evaluating, architecting, and implementing various web-based technologies including both 3rd party and open source platforms and tools",
+      	"Responsible for architecting solutions and breaking them down into components and individual tasks to delegate to team",
+      	"Accountable for consulting and leading development of solution, approach, estimates, budgets, timeline, project plan, and day to day management of tasks for projects led",
+      	"Primary technologies were eZ Publish, Drupal, custom PHP applications, HTML, CSS, and 3rd party API integration",
+      	"Championed and led internal efforts to adopt industy best-practices, including consistent use of source control and ticketing systems",
+      	"Led full team through migration from projcets with no source control to Subversion and later to Git",
+      	"Administered Atlassian products including JIRA and Confluence. Responsibilities included full design and implementation of end-to-end workflow in JIRA, construction of templates and spaces in Confluence, and full integration of the two products",
+      	"Responsible for developing and implementing solutions for large-scale data migrations including database extraction, API, and screen-scraping techniques",
+      	"Conducted several full-scale CMS product comparisons for clients, including determining client concerns & primary needs, coordinating product demos, and consulting on final evaluation & decisions",
+      	"Developed and maintained high-quality client relationships built on open and honest communication",
+      	"Was a member of People Committee - an employee-led group of employees in charge of running the annual staff survey and interpreting / reporting findings to the Senior Leadership team and owners of the company",
+      	"Transitioned to full time remote position from the St Louis metro area in July 2012"
+      ],
       projects: ["skf", "lfh", "aicpa", "adc", "amnh", "nthp", "fc", "bex", "lbbc", "occ"]
     },
     "am" : {
@@ -128,11 +131,12 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       title: 'Technical Consultant / Liason (official title: Project Manager with Technical Focus)',
       location: 'Atlantic Media',
       timeframe: 'June 2008 - March 2009',
-      content: '<p>After leaving Siteworx, I went to Atlantic Media Company, producers of The National Journal, Congress Daily, and The Atlantic Monthly. While my title was Project Manager, the primary focus of my role was to function as the technical liason between the IT/development team and the various business units within the organization.</p><ul>'+
-        '<li>De-mystified technology solutions with C-level executives of all business units, working towards unified solutions for shared problems.</li>'+
-        '<li>Coordinated project timelines and development tasks for multiple internal business units.</li>'+
-        '<li>Assisted with the creation and implementation of full SLDC project management process for IT department.</li>'+
-        '</ul>',
+      overview: '<p>After leaving Siteworx, I went to Atlantic Media Company, producers of The National Journal, Congress Daily, and The Atlantic Monthly. While my title was Project Manager, the primary focus of my role was to function as the technical liason between the IT/development team and the various business units within the organization.</p>',
+      list: [
+        "De-mystified technology solutions with C-level executives of all business units, working towards unified solutions for shared problems.",
+        "Coordinated project timelines and development tasks for multiple internal business units.",
+        "Assisted with the creation and implementation of full SLDC project management process for IT department."
+      ],
       projects: ["am"]
     },
     "swx-tm" : {
@@ -140,17 +144,18 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       title: 'Technical Manager with Continued Senior Developer Duties',
       location: 'Siteworx, Inc.',
       timeframe: 'June 2006 - March 2009',
-      content: '<p>As Siteworx had grown to then have a technical team of 30 developers, they underwent a restructuring that saw me promoted to one of 4 Technical Manager positions in charge of handling personnel, staffing, project, and development management for a team of 7 developers.</p><ul>'+
-        '<li>Continued work as Senior Developer, splitting time between Sr Dev role (60%) and Tech Manager role (40%)</li>'+
-        '<li>Directly managed and coordinated team of 7 developers to successfully complete multiple simultaneous projects.</li>'+
-        '<li>Worked closely with team leads from various disciplines to manage projects through full life cycle.</li>'+
-        '<li>Managed customer relationships effectively and worked closely with account lead to grow accounts and pursue up sell opportunities. Clients included associations and nonprofit organizations.</li>'+
-        '<li>Consulted with clients on user interface design, technology platforms, best practices, and system implementation.</li>'+
-        '<li>Developed, refined, and analyzed requirements to develop Level of Effort (LOE) estimates and project schedules.</li>'+
-        '<li>Effectively managed timelines, risks, budgets, hours tracking, and invoicing for multiple projects.</li>'+
-        '<li>Collaborated with senior developers and system engineers to define project architecture and hardware requirements.</li>'+
-        '<li>Used expertise in both technical and soft skills to mentor junior and senior developers.</li>'+
-        '</ul>',
+      overview: '<p>As Siteworx had grown to then have a technical team of 30 developers, they underwent a restructuring that saw me promoted to one of 4 Technical Manager positions in charge of handling personnel, staffing, project, and development management for a team of 7 developers.</p>',
+      list: [
+        "Continued work as Senior Developer, splitting time between Sr Dev role (60%) and Tech Manager role (40%)",
+      	"Directly managed and coordinated team of 7 developers to successfully complete multiple simultaneous projects.",
+      	"Worked closely with team leads from various disciplines to manage projects through full life cycle.",
+      	"Managed customer relationships effectively and worked closely with account lead to grow accounts and pursue up sell opportunities. Clients included associations and nonprofit organizations.",
+      	"Consulted with clients on user interface design, technology platforms, best practices, and system implementation.",
+      	"Developed, refined, and analyzed requirements to develop Level of Effort (LOE) estimates and project schedules.",
+      	"Effectively managed timelines, risks, budgets, hours tracking, and invoicing for multiple projects.",
+      	"Collaborated with senior developers and system engineers to define project architecture and hardware requirements.",
+      	"Used expertise in both technical and soft skills to mentor junior and senior developers."
+      ],
       projects : ["cccu", "goodwill", "abi", "k12"]
     },
     "swx-sd" : {
@@ -158,14 +163,15 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       title: 'Senior Developer',
       location: 'Siteworx, Inc.',
       timeframe: 'June 2005 - June 2006',
-      content: '<p>Frequently representing Siteworx as a Technology Consultant, leading development efforts, and coordinating teams of 2-3 developers, I was promoted to Senior Developer.</p><ul>'+
-        '<li>Directly managed team of 3 developers to successfully complete multiple simultaneous projects.</li>'+
-        '<li>Worked with management team to coordinate matrixed development team across projects.</li>'+
-        '<li>Analyzed requirements to define scope, generate LOE estimates, and outline schedules.</li>'+
-        '<li>Acted as technical lead and project manager on multiple simultaneous projects.</li>'+
-        '<li>Collaborated with project managers and client contacts to constrain scope, mitigate risk, and meet deadlines.</li>'+
-        '<li>Mentored junior developers to improve both technical and softer skills.</li>'+
-        '</ul>',
+      overview: '<p>Frequently representing Siteworx as a Technology Consultant, leading development efforts, and coordinating teams of 2-3 developers, I was promoted to Senior Developer.</p>',
+      list: [
+      	"Directly managed team of 3 developers to successfully complete multiple simultaneous projects.",
+      	"Worked with management team to coordinate matrixed development team across projects.",
+      	"Analyzed requirements to define scope, generate LOE estimates, and outline schedules.",
+      	"Acted as technical lead and project manager on multiple simultaneous projects.",
+      	"Collaborated with project managers and client contacts to constrain scope, mitigate risk, and meet deadlines.",
+      	"Mentored junior developers to improve both technical and softer skills."
+      ],
       projects: ["lat34", "disc", "cbpf", "aol"]
     },
     "swx-d" : {
@@ -173,13 +179,14 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       title: 'Software Developer',
       location: 'Siteworx, Inc.',
       timeframe: 'March 2004 - June 2005',
-      content: '<p>As a software developer at Siteworx, which was quickly growing at the time, I was able to continue to prove my worth and began managing project teams of 2-3 developers as new junior resources joined the development team.</p><ul>'+
-        '<li>Implemented multiple software projects as both a member and lead of teams of 2 -3 developers.</li>'+
-        '<li>Utilized wide range of skills to assist with development, user interface design, and project management.</li>'+
-        '<li>Worked on-site, embedded with client development teams.</li>'+
-        '<li>Collaborated with co-workers and clients to effective deliver highly functional and dynamic projects.</li>'+
-        '<li>Displayed effective time-management and communication skills to juggle multiple responsibilities.</li>'+
-        '</ul>',
+      overview: '<p>As a software developer at Siteworx, which was quickly growing at the time, I was able to continue to prove my worth and began managing project teams of 2-3 developers as new junior resources joined the development team.</p>',
+      list: [
+      	"Implemented multiple software projects as both a member and lead of teams of 2 -3 developers.",
+      	"Utilized wide range of skills to assist with development, user interface design, and project management.",
+      	"Worked on-site, embedded with client development teams.",
+      	"Collaborated with co-workers and clients to effective deliver highly functional and dynamic projects.",
+      	"Displayed effective time-management and communication skills to juggle multiple responsibilities."
+      ],
       projects: ["drs", "dlcvcs"]
     },
     "swx-intern" : {
@@ -187,7 +194,8 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       title: 'Development Intern',
       location: 'Siteworx, Inc.',
       timeframe: 'January 2004 - March 2004',
-      content: '<p>Temporarily relocated to Reston, Virginia and started with 3 month internship between college semesters.</p><p>Siteworx was still a small shop at the time and I was one of 8 employees. Initially the position was not meant to have specific goals and was instead intended to merely be an introduction to working in the industry and a test to see if Siteworx could fill time for someone in a junior capacity.</p><p>Based on my performance on early tasks, the complexity and amount of tasks I was given escalated quickly and 2 months into the internship, I was offered a full time position as a software developer. Given that I had quickly become an integral part of their small team, I chose to permanently relocate to Reston to continue with the position.</p>',
+      overview: '<p>Temporarily relocated to Reston, Virginia and started with 3 month internship between college semesters.</p><p>Siteworx was still a small shop at the time and I was one of 8 employees. Initially the position was not meant to have specific goals and was instead intended to merely be an introduction to working in the industry and a test to see if Siteworx could fill time for someone in a junior capacity.</p><p>Based on my performance on early tasks, the complexity and amount of tasks I was given escalated quickly and 2 months into the internship, I was offered a full time position as a software developer. Given that I had quickly become an integral part of their small team, I chose to permanently relocate to Reston to continue with the position.</p>',
+      list: [],
       projects: ["hh"]
     },
     "siue" : {
@@ -195,7 +203,8 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
       title: "Office Assistant",
       location: 'Southern Illinois University Edwardsville Textbook Service',
       timeframe: 'March 2002 - December 2003',
-      content: '<p>Worked as office assistant while attending college.</p><p>As part of my work in this position I provided some feedback about their custom internal rental system application, which had been written over many years by a single resource as screen-based database code in Paradox 4.5. That feedback led to eventually debugging, maintaining, and re-architecting many pieces of the application myself, becoming the first student worker to assist with the program.</p>',
+      overview: '<p>Worked as office assistant while attending college.</p><p>As part of my work in this position I provided some feedback about their custom internal rental system application, which had been written over many years by a single resource as screen-based database code in Paradox 4.5. That feedback led to eventually debugging, maintaining, and re-architecting many pieces of the application myself, becoming the first student worker to assist with the program.</p>',
+      list: [],
       projects: ["tbs"]
     }
   };
@@ -605,31 +614,31 @@ var app = angular.module("PortfolioApp", ["ngSanitize"])
    {
       id: "dev",
       title: "Senior Web Developer",
-      content: "I have always been drawn to computers. From my early days tinkering with programs on my TI-83 calculator and teaching myself the basics of HTML on my first desktop computer to recently digging into AngularJS and Bootstrap, I have always had a desire to learn more about how things work under the hood. That curiosity has led me to a career in development with a breadth of web technologies and solutions including primary web technologies (HTML, CSS, JavaScript), LAMP stack, various languages (PHP, Java, Python, and more), and a specific focus on CMS platform technologies (Drupal, eZ Publish, WordPress, etc). Throughout my time in the web industry, I have become very familiar with the challenges of web builds, both common and uncommon.",
+      content: "<p class='lead'>I have always been drawn to computers. From my early days tinkering with programs on my TI-83 calculator and teaching myself the basics of HTML on my first desktop computer to recently digging into AngularJS and Bootstrap, I have always had a desire to learn more about how things work under the hood. That curiosity has led me to a career in development with a <a href='#skills' alt='see expertise'>breadth of web technologies and solutions</a> and a specific focus on CMS platform technologies. <a href='#career' alt='see career'>Throughout my time in the web industry</a>, I have become very familiar with the <a href='#projects' alt='see projects'>challenges of web builds</a>, both common and uncommon.</p>",
       quote: "cguy"
     },
     {
       id: "solve",
       title: "Problem Solver",
-      content: "I am a quick learner and have spent most of my career being a collaborator and leader that fills in the gaps, playing a necessary but ill-defined role of problem solver and team force multiplier. With more than a dozen years of experience in the web tech industry, my primary focus has always been on senior-level development, my background also includes experience splitting time as a technical team lead, UX architect, project manager, technical consultant, and technical director.",
+      content: "<p class='lead'>I am a quick learner and have spent most of my career being a collaborator and leader that fills in the gaps, playing a necessary but ill-defined role of problem solver and team force multiplier. With more than a dozen years of experience in the web tech industry, my primary focus has always been on senior-level development, my background also includes experience splitting time as a technical team lead, UX architect, project manager, technical consultant, and technical director.</p>",
       quote: "mrogers"
     },
     {
       id: "collab",
       title: "Collaborator",
-      content: "Personable, outgoing, intuitive, and creative with an eye for solutions that are both technically sound and personally engaging, I am able to leverage my pragmatic and collaborative nature to manage teams, engage internal & client team members, and deliver high quality results. I have been an integral part of teams responsible for delivering award-winning websites and have helped many organizations identify root-cause problems, design solutions, and achieve success.",
+      content: "<p class='lead'>Personable, outgoing, intuitive, and creative with an eye for solutions that are both technically sound and personally engaging, I am able to leverage my pragmatic and collaborative nature to manage teams, engage internal & client team members, and deliver high quality results. I have been an integral part of teams responsible for delivering award-winning websites and have helped many organizations identify root-cause problems, design solutions, and achieve success.</p>",
       quote: "nmeier"
     },
     {
       id: "consult",
       title: "Consensus Builder",
-      content: "While I have a breadth of experience with all parts of development, what always engages me the most are the collaborative and brainstorming aspects. I love to dig into a problem, put heads down with others, and work towards a smart solution. I am very pragmatic and tend to emerge as a thought-leader, working to identify the best path forward. In addition to my own contributions, I often reinforce others' opinions and give a voice to the best ideas no matter where or who they come from.",
+      content: "<p class='lead'>While I have a breadth of experience with all parts of development, what always engages me the most are the collaborative and brainstorming aspects. I love to dig into a problem, put heads down with others, and work towards a smart solution. I am very pragmatic and tend to emerge as a thought-leader, working to identify the best path forward. In addition to my own contributions, I often reinforce others' opinions and give a voice to the best ideas no matter where or who they come from.</p>",
       quote: "danderson"
     },
     {
       id: "mgmt",
       title: "Manager",
-      content: "I have a strong belief in teamwork and collaboration. Leveraging individual strengths appropriately, mentoring team members, and growing organically are key goals when managing a successful team. I am a steadfast believer in good ideas over politics and value collaboration & teamwork above all else.",
+      content: "<p class='lead'>I have a strong belief in teamwork and collaboration. Leveraging individual strengths appropriately, mentoring team members, and growing organically are key goals when managing a successful team. I am a steadfast believer in good ideas over politics and value collaboration & teamwork above all else.</p>",
       quote: "jschmatz"
     }
   ];
